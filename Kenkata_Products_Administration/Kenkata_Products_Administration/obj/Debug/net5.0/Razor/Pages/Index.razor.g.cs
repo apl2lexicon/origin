@@ -79,6 +79,13 @@ using Kenkata_Products_Administration.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\_Imports.razor"
+using Kenkata_Products_Administration.Models;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {

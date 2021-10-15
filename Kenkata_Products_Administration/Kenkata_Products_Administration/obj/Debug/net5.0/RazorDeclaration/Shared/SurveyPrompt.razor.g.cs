@@ -82,6 +82,13 @@ using Kenkata_Products_Administration.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\_Imports.razor"
+using Kenkata_Products_Administration.Models;
+
+#line default
+#line hidden
+#nullable disable
     public partial class SurveyPrompt : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

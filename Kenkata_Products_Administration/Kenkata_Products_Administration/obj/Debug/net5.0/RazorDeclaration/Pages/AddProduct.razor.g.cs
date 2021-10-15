@@ -82,6 +82,13 @@ using Kenkata_Products_Administration.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\_Imports.razor"
+using Kenkata_Products_Administration.Models;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/addproducts")]
     public partial class AddProduct : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -90,6 +97,19 @@ using Kenkata_Products_Administration.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 103 "C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Pages\AddProduct.razor"
+       
+    private void SaveProduct()
+        {
+
+        }
+
+
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591
