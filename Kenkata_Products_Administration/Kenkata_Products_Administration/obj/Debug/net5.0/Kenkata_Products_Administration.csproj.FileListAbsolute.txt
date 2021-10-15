@@ -404,9 +404,11 @@ C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\o
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Kenkata_Products_Administration.MvcApplicationPartsAssemblyInfo.cache
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Kenkata_Products_Administration.RazorComponent.input.cache
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\RazorDeclaration\Pages\AddProduct.razor.g.cs
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\RazorDeclaration\Pages\ListDeleteProducts.razor.g.cs
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
@@ -417,9 +419,11 @@ C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\o
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Kenkata_Products_Administration.TagHelpers.output.cache
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Kenkata_Products_Administration.RazorCoreGenerate.cache
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Razor\App.razor.g.cs
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Razor\Pages\AddProduct.razor.g.cs
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Razor\Pages\ListDeleteProducts.razor.g.cs
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
@@ -630,7 +634,3 @@ C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\o
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Kenkata_Products_Administration.dll
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\ref\Kenkata_Products_Administration.dll
 C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Kenkata_Products_Administration.pdb
-C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\RazorDeclaration\Pages\AddProduct.razor.g.cs
-C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Razor\Pages\AddProduct.razor.g.cs
-C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\RazorDeclaration\Pages\ListDeleteProducts.razor.g.cs
-C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\obj\Debug\net5.0\Razor\Pages\ListDeleteProducts.razor.g.cs

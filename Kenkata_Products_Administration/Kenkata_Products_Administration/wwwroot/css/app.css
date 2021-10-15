@@ -42,9 +42,29 @@ a, .btn-link {
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+
+#AddProdPage .header {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#inputfields {
+    width: 400px;
+}
+
+#inputfields .inputs {
+    width: 400px;
+    margin-top: 16px;
+}
+
+#inputfields .input_btns {
+    margin-top: 16px;
+}
+

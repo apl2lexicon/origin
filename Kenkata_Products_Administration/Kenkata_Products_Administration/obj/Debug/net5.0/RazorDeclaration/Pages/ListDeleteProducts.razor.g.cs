@@ -82,7 +82,7 @@ using Kenkata_Products_Administration.Shared;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/ListDeleteProducts")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/listdeleteproducts")]
     public partial class ListDeleteProducts : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

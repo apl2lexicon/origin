@@ -82,7 +82,7 @@ using Kenkata_Products_Administration.Shared;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/AddProducts")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/addproducts")]
     public partial class AddProduct : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
