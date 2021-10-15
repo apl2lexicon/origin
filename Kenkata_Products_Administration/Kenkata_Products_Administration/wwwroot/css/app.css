@@ -55,16 +55,34 @@ a, .btn-link {
     text-align: center;
 }
 
-#inputfields {
+#AddProdPage .inputfields {
     width: 400px;
 }
 
-#inputfields .inputs {
+#AddProdPage .inputs {
     width: 400px;
     margin-top: 16px;
 }
 
-#inputfields .input_btns {
+#AddProdPage .input_btns {
     margin-top: 16px;
 }
 
+#ListDelProdPage .header {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#ListDelProdPage .inputfields {
+    width: 400px;
+}
+
+#ListDelProdPage .inputs {
+    width: 400px;
+    margin-top: 16px;
+}
+
+#ListDelProdPage .input_btns {
+    margin-top: 16px;
+}
