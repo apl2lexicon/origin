@@ -1,0 +1,101 @@
+﻿@page "/AddProducts"
+
+<div>
+    <h1 id="header">Kenkata Produkt Administration - Nya Produkter</h1>
+</div>
+<div id="inputfields" class="container">
+    <select class="inputs form-select" aria-label="Default select example">
+        <option selected>Välj kundkategori</option>
+        <option value="1">Unisex</option>
+        <option value="2">Män</option>
+        <option value="3">Kvinnor</option>
+        <option value="4">Barn</option>
+        <option value="5">Pojkar</option>
+        <option value="6">Flickor</option>
+    </select>
+    <select class="inputs form-select" aria-label="Default select example">
+        <option selected>Välj produktens årstid</option>
+        <option value="1">Alla</option>
+        <option value="2">Vår/Höst</option>
+        <option value="3">Sommar</option>
+        <option value="4">Vinter</option>
+    </select>
+    <select class="inputs form-select" aria-label="Default select example">
+        <option selected>Välj produkt kategori</option>
+        <option value="1">Skor</option>
+        <option value="2">Byxor</option>
+        <option value="3">Jackor</option>
+        <option value="4">Tröjor</option>
+        <option value="5">T-Skirts</option>
+        <option value="6">Klänningar</option>
+        <option value="7">Kjolar</option>
+        <option value="8">Skjortor</option>
+        <option value="9">Shorts</option>
+        <option value="10">Hattar/Kepsar/Mössor</option>
+        <option value="11">Solglasögon</option>
+        <option value="12">Klockor</option>
+    </select>
+    <select class="inputs form-select" aria-label="Default select example">
+        <option selected>Välj produktmärke</option>
+        <option value="1">Bexim</option>
+        <option value="2">Lighton</option>
+        <option value="3">DISMIS</option>
+        <option value="4">Rosimo</option>
+        <option value="5">dallas</option>
+    </select>
+    <select class="inputs form-select" aria-label="Default select example">
+        <option selected>Välj färg</option>
+        <option value="1">Svart</option>
+        <option value="2">Grå</option>
+        <option value="3">Röd</option>
+        <option value="4">Grön</option>
+        <option value="5">Orange</option>
+        <option value="6">Brun</option>
+    </select>
+    <select class="inputs form-select" aria-label="Default select example">
+        <option selected>Välj Storlek</option>
+        <option value="1">N/A</option>
+        <option value="2">XXS</option>
+        <option value="3">XS</option>
+        <option value="4">S</option>
+        <option value="5">M</option>
+        <option value="6">L</option>
+        <option value="7">XL</option>
+        <option value="8">XXL</option>
+        <option value="9">XXXL</option>
+        <option value="10">30</option>
+        <option value="11">31</option>
+        <option value="12">32</option>
+        <option value="13">33</option>
+        <option value="14">34</option>
+        <option value="15">35</option>
+        <option value="16">36</option>
+        <option value="17">37</option>
+        <option value="18">38</option>
+        <option value="19">39</option>
+        <option value="20">40</option>
+        <option value="21">41</option>
+        <option value="22">42</option>
+        <option value="23">43</option>
+        <option value="24">44</option>
+        <option value="25">45</option>
+        <option value="26">46</option>
+    </select>        <input class="inputs form-control" type="text" placeholder="Antal" aria-label="default input example">
+    <input class="inputs form-control" type="text" placeholder="Pris" aria-label="default input example">
+    <div class="inputs mb-3">
+        <label for="formFile" class="form-label">Välj produktbild</label>
+        <input class="form-control" type="file" id="formFile">
+    </div>
+    <div class="d-grid col-6 mx-auto">
+        <input class="inputs btn btn-primary" type="submit" value="Spara">
+        <a class="inputs btn btn-primary" href="/" role="button">Avbryt</a>
+    </div>
+    <br />
+    <br />
+</div>
+
+
+
+@code {
+
+}
