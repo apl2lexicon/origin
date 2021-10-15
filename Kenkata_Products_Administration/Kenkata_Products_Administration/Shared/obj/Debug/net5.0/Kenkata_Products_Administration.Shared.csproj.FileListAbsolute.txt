@@ -1,0 +1,12 @@
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Shared\bin\Debug\net5.0\Kenkata_Products_Administration.Shared.deps.json
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Shared\bin\Debug\net5.0\Kenkata_Products_Administration.Shared.dll
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Shared\bin\Debug\net5.0\ref\Kenkata_Products_Administration.Shared.dll
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Shared\bin\Debug\net5.0\Kenkata_Products_Administration.Shared.pdb
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Shared\obj\Debug\net5.0\Kenkata_Products_Administration.Shared.csproj.AssemblyReference.cache
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Shared\obj\Debug\net5.0\Kenkata_Products_Administration.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Shared\obj\Debug\net5.0\Kenkata_Products_Administration.Shared.AssemblyInfoInputs.cache
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Shared\obj\Debug\net5.0\Kenkata_Products_Administration.Shared.AssemblyInfo.cs
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Shared\obj\Debug\net5.0\Kenkata_Products_Administration.Shared.csproj.CoreCompileInputs.cache
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Shared\obj\Debug\net5.0\Kenkata_Products_Administration.Shared.dll
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Shared\obj\Debug\net5.0\ref\Kenkata_Products_Administration.Shared.dll
+C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Shared\obj\Debug\net5.0\Kenkata_Products_Administration.Shared.pdb

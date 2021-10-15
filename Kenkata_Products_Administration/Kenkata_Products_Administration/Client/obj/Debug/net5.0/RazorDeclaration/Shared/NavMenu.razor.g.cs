@@ -82,6 +82,13 @@ using Kenkata_Products_Administration.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Client\_Imports.razor"
+using Kenkata_Products_Administration.Models;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -90,7 +97,7 @@ using Kenkata_Products_Administration.Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Client\Shared\NavMenu.razor"
+#line 38 "C:\DevOps\Code\Kenkata_Products_Administration\Kenkata_Products_Administration\Client\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

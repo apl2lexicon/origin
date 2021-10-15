@@ -42,9 +42,47 @@ a, .btn-link {
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+
+#AddProdPage .header {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#AddProdPage .inputfields {
+    width: 400px;
+}
+
+#AddProdPage .inputs {
+    width: 400px;
+    margin-top: 16px;
+}
+
+#AddProdPage .input_btns {
+    margin-top: 16px;
+}
+
+#ListDelProdPage .header {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#ListDelProdPage .inputfields {
+    width: 400px;
+}
+
+#ListDelProdPage .inputs {
+    width: 400px;
+    margin-top: 16px;
+}
+
+#ListDelProdPage .input_btns {
+    margin-top: 16px;
+}
