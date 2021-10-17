@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "cosmosdb1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.DocumentDB/databaseAccounts/kenkataproductdb",
+      "type": "cosmosdb.azure",
+      "connectionId": "ConnectionStrings:AccountEndpoint=https://kenkataproductdb.documents.azure.com:443/;AccountKey=rnOs23WULyJ5xioMaeoJQF2So0yIYShrkrEuips5nf2RIIE6in0NCGwtR3JBOrUycHCKflJ15SIg3CmEZWE96A==;",
+      "secretStore": "LocalSecretsFile"
+    }
+  }
+}

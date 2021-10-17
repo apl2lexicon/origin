@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets"
+    },
+    "cosmosdb1": {
+      "type": "cosmosdb",
+      "connectionId": "ConnectionStrings:AccountEndpoint=https://kenkataproductdb.documents.azure.com:443/;AccountKey=rnOs23WULyJ5xioMaeoJQF2So0yIYShrkrEuips5nf2RIIE6in0NCGwtR3JBOrUycHCKflJ15SIg3CmEZWE96A==;"
+    }
+  }
+}
