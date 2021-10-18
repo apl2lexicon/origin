@@ -13,6 +13,10 @@
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-ep2UIBFG2zNXHGp7GY9eWSZYOfsff\/RghOOq4kbyK1k=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-xpgWBaazyklL3eELo190s8Jv3JT19PW9aM\/99xTYv\/0=",
       "Microsoft.AspNetCore.Metadata.dll": "sha256-dz1QY4sEbXr3Ei0PsRO3VB4ZTBTRL6t3xgcgXuKFhFo=",
+      "Microsoft.Azure.Cosmos.Client.dll": "sha256-PW72bsWewPKPwu0qBz5DW5E9Y4R6Fa5yBC5MFzRhges=",
+      "Microsoft.Azure.Cosmos.Core.dll": "sha256-adcbWjeHh3PYKpurKmdjYIt6CP101bpG9j4rMftx6r8=",
+      "Microsoft.Azure.Cosmos.Direct.dll": "sha256-PhDczGEblGjtfT4yqff+AubG3vXGII8FypMZjiB4V68=",
+      "Microsoft.Azure.Cosmos.Serialization.HybridRow.dll": "sha256-U1Oa04xLINIkDOqbg4zS71mr9AtLgsMv3GZrL7vQx0Y=",
       "Microsoft.Extensions.Configuration.dll": "sha256-x9zYR1t1is\/fStNpBiQnXyPdMpLLcQcra3w4RXGSg4o=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-NYecKM0ZpUvzj4spvgi6xUu80rkx8PX7fiRok\/BNaHw=",
       "Microsoft.Extensions.Configuration.Binder.dll": "sha256-JFLIykah3r5WjvztBuVIaMM9wfVswDM+On6k\/QVgeeg=",
@@ -29,7 +33,13 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-f2PgoftqEkKRuuiAk6S1MHygOuqZBHzB0HOB3vR93TU=",
       "Microsoft.JSInterop.dll": "sha256-2U21ELz08tKryAM9mMlyuFaZZyvZAS03M1ZyL\/T\/YyA=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-yqSzPJFI4ilEEeghuXNKtT9syg7UPckEK7mF53UyxM4=",
+      "Newtonsoft.Json.dll": "sha256-GViDVnAQuA8FMpwwB\/9uaspcQefOSU1hpfK4bC07Eds=",
+      "System.Configuration.ConfigurationManager.dll": "sha256-6BS3nxdezehVx64APNi8XtiO3qSrQInQVe17Y9p7vsk=",
       "System.IO.Pipelines.dll": "sha256-3ET+mpR7F058YRj9YaLHOVXBqOW6iUxtIpeiKPYw4PA=",
+      "System.Security.Cryptography.ProtectedData.dll": "sha256-gFZvCDns5ZRuZr+fANcj5Z43G6E0GhjgDHx6fEkpjh0=",
+      "System.Security.Permissions.dll": "sha256-jKmbTXbScI0nBA2C2HyfK+smmH4oMUauprwnXZLolc4=",
+      "System.ServiceModel.Primitives.dll": "sha256-En\/RitvPkx0duUHO2xKzKVzQ6SmkW8vo8RcSonezb0Q=",
+      "System.ServiceModel.dll": "sha256-szVBna\/XpnzV9H1kT8vTv3ocMQGPvf3jUmSgx1VcRr8=",
       "Microsoft.CSharp.dll": "sha256-J3xEnfK9Stuxsk3ysfAkwm7tlSZzs8rytHhodu+3aA0=",
       "Microsoft.VisualBasic.Core.dll": "sha256-6gJT+FVMmaF5o4CyPAnHcWjWVtFMSdJke\/+1seKS1Y0=",
       "Microsoft.VisualBasic.dll": "sha256-BCLkgDB15ehV\/3J8Qz1SJ2d4wMMH1Avc\/MlGr7G45I8=",
@@ -195,11 +205,11 @@
       "mscorlib.dll": "sha256-heWnofXFSc\/TfAxrWpjQxeuS+nlIOs9YycfI2QGXGM8=",
       "netstandard.dll": "sha256-mbIVAluJ7cAx0vUQshB\/c1zEIK5JcYwIYxo\/BQ\/meRU=",
       "System.Private.CoreLib.dll": "sha256-FrZbEyy47f3RDuj77R5oHUGxSGEDgRRxykTjImrLqfM=",
-      "Kenkata_Adm_Products.dll": "sha256-e2kMqSgQNq9SKXn\/FImCJ8I+HDQRWlaMbjx69Mu2Lyw="
+      "Kenkata_Adm_Products.dll": "sha256-yN\/RnnLo7GNySuGFKuia2lMFECa9HylgrgjVG2w0UVk="
     },
     "lazyAssembly": null,
     "pdb": {
-      "Kenkata_Adm_Products.pdb": "sha256-B\/TnkKb8HbzZ+4\/pU3U9oC7XK5GSLL7cZR\/j7HJrBKo="
+      "Kenkata_Adm_Products.pdb": "sha256-JrfJe+npvWpLdsaoUAf8GVczjx6R5X1jSgRzhP9j0vw="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-5ttRwTa4Rar530elwLdfGDeH9I9NX9MPyDl6zLi9uug=",
