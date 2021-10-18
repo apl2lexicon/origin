@@ -16,12 +16,13 @@ namespace ProductsDB
         [CosmosDB(
             databaseName:"ProductDB",
             collectionName:"Products",
-            ConnectionStringSetting = "CosmocDB"
-            )] IEnumerable<Product> questionSet,
+            ConnectionStringSetting = "CosmocDB",
+                SqlQuery = "SELECT * FROM c"
+            )] IEnumerable<Product> products,
                 ILogger log)
         {
             log.LogInformation("Data fetched from KenkataProductDB");
-            return new OkObjectResult(questionSet);
+            return new OkObjectResult(products);
         }
     }
 }
