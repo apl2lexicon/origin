@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
-using ProductsDB.Models;
+using Kenkata_Adm_Products.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

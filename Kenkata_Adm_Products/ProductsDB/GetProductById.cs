@@ -6,7 +6,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using ProductsDB.Models;
+using Kenkata_Adm_Products.Models;
 using System.Linq;
 
 namespace ProductsDB
