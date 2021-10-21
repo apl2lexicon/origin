@@ -679,3 +679,5 @@ C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\build-
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\build-gz\jFx6nbZA.gz
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\build-gz\mWhHMDp1.gz
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\build-gz\N4xNIVde.gz
+C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\RazorDeclaration\Shared\ProductItem.razor.g.cs
+C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Razor\Shared\ProductItem.razor.g.cs

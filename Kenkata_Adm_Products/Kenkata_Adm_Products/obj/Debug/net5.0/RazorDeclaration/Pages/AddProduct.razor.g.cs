@@ -89,6 +89,13 @@ using Kenkata_Adm_Products.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 12 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+using System.Threading;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/addproducts")]
     public partial class AddProduct : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -109,6 +116,8 @@ using Kenkata_Adm_Products.Models;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JS { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591
