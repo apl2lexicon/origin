@@ -10,14 +10,14 @@
         "projectUniqueName": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\ProductsDB\\ProductsDB.csproj",
         "projectName": "ProductsDB",
         "projectPath": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\ProductsDB\\ProductsDB.csproj",
-        "packagesPath": "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\mats-\\.nuget\\packages\\",
         "outputPath": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\ProductsDB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tommy J Strömbäck\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mats-\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,17 +44,25 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.Azure.Cosmos": {
               "target": "Package",
-              "version": "[3.21.0, )"
+              "version": "[3.22.0, )"
             },
             "Microsoft.Azure.WebJobs.Extensions.CosmosDB": {
               "target": "Package",
               "version": "[3.0.10, )"
             },
+            "Microsoft.Azure.WebJobs.Extensions.Http": {
+              "target": "Package",
+              "version": "[3.0.12, )"
+            },
             "Microsoft.NET.Sdk.Functions": {
               "target": "Package",
-              "version": "[3.0.13, )"
+              "version": "[4.0.0, )"
             }
           },
           "imports": [

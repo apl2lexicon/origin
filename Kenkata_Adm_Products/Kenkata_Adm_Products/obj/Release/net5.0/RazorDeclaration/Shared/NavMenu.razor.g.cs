@@ -89,6 +89,13 @@ using Kenkata_Adm_Products.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 12 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+using System.Threading;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -97,7 +104,7 @@ using Kenkata_Adm_Products.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 85 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Shared\NavMenu.razor"
+#line 97 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
@@ -111,6 +118,8 @@ using Kenkata_Adm_Products.Models;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JS { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591
