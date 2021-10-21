@@ -6,6 +6,39 @@
     </div>
 
     <div class="inputfields container">
+        @if (products == null)
+        {
+            <div>No products found.</div>
+        }
+        else
+        {
+            <table id="product-list" class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">CustomerCategory</th>
+                        <th scope="col">Season</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Brand</th>
+                        <th scope="col">Color</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">InStock</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">CreateDate</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var product in products)
+                    {
+                        <ProductItem products="@product" />
+                    }
+                </tbody>
+            </table>
+        }
+
         <div class="d-grid col-6 mx-auto">
             <input class="input_btns btn btn-primary" type="submit" value="Ta bort">
             <a class="input_btns btn btn-primary" href="/" role="button">Avbryt</a>
@@ -17,5 +50,21 @@
 </div>
 
     @code {
+        public ProductModel[] products;
 
-    }
+        protected async Task GetProductsAsync()
+        {
+            products = await Http.GetFromJsonAsync<ProductModel[]>("http://localhost:7071/api/GetAllProducts");
+        }
+
+        protected override void OnInitialized()
+        {
+            var timer = new Timer(new TimerCallback(_ => InvokeAsync(() => StateHasChanged())), null, 10, 5000);
+        }
+
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            await GetProductsAsync();
+        }
+
+}
