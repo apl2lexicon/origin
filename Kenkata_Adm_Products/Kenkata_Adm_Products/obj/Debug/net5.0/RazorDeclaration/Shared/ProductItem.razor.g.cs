@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Kenkata_Adm_Products.Pages
+namespace Kenkata_Adm_Products.Shared
 {
     #line hidden
     using System;
@@ -89,8 +89,7 @@ using Kenkata_Adm_Products.Models;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/listdeleteproducts")]
-    public partial class ListDeleteProducts : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class ProductItem : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -98,25 +97,10 @@ using Kenkata_Adm_Products.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 52 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ListDeleteProducts.razor"
-           
-        public ProductModel[] products;
-
-        protected async Task GetProductsAsync()
-        {
-            products = await Http.GetFromJsonAsync<ProductModel[]>("http://localhost:7071/api/GetAllProducts");
-        }
-
-        protected override void OnInitialized()
-        {
-            var timer = new Timer(new TimerCallback(_ => InvokeAsync(() => StateHasChanged())), null, 10, 5000);
-        }
-
-        protected override async Task OnAfterRenderAsync(bool firstRender)
-        {
-            await GetProductsAsync();
-        }
-
+#line 25 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Shared\ProductItem.razor"
+       
+    [Parameter]
+    public ProductModel Product { get; set; }
 
 #line default
 #line hidden
