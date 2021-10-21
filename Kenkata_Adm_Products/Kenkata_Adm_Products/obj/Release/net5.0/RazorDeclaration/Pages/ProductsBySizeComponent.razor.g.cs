@@ -106,7 +106,7 @@ using Kenkata_Adm_Products.Models;
     protected override async Task OnInitializedAsync()
     {
         size = "3";
-        products = await Http.GetFromJsonAsync<ProductModel[]>("GetProductsBySize?Size=" + size);
+        products = await Http.GetFromJsonAsync<ProductModel[]>("GetProductsBySize/" + size);
 
     }
 

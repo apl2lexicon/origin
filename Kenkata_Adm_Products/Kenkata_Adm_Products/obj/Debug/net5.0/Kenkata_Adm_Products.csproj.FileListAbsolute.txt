@@ -677,3 +677,5 @@ C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Razor\
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Razor\Pages\ProductsByColorComponent.razor.g.cs
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Razor\Pages\ProductsBySizeComponent.razor.g.cs
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Razor\Pages\ProductsByStatusComponent.razor.g.cs
+C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\RazorDeclaration\Pages\ProductsBySeasonComponent.razor.g.cs
+C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Razor\Pages\ProductsBySeasonComponent.razor.g.cs
