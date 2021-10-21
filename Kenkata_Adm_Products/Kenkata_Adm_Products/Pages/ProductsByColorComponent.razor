@@ -1,0 +1,59 @@
+﻿@page "/productsbycolorcomponent"
+@inject HttpClient Http
+
+<h3>ProductsByColorComponent</h3>
+
+<p>Color: </p>
+<input type="text" @bind-value="color" />
+
+@if (products == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Customer Category</th>
+                <th>Season</th>
+                <th>Category</th>
+                <th>Brand</th>
+                <th>Color</th>
+                <th>Size</th>
+                <th>InStock</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in products)
+            {
+                <tr>
+                    <td>@product.id</td>
+                    <td>@product.CustomerCathegory</td>
+                    <td>@product.Season</td>
+                    <td>@product.Cathegory</td>
+                    <td>@product.Brand</td>
+                    <td>@product.Color</td>
+                    <td>@product.Size</td>
+                    <td>@product.InStock</td>
+                    <td>@product.Price</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    private ProductModel[] products;
+    private string color { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        color = "1";
+        products = await Http.GetFromJsonAsync<ProductModel[]>("GetProductsByColor/" + color);
+
+    }
+}

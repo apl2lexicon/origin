@@ -97,7 +97,7 @@ using Kenkata_Adm_Products.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 43 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Shared\NavMenu.razor"
+#line 79 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
