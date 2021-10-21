@@ -89,3 +89,4 @@ C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\bin\Debug\netcoreapp3.1\runtimes\
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsDB.dll
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsDB.pdb
+C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsDB.csproj.CopyComplete

@@ -13,20 +13,6 @@ namespace Kenkata_Adm_Products.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
-using System.Net.Http;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 2 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
-using System.Net.Http.Json;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 3 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
@@ -89,6 +75,21 @@ using Kenkata_Adm_Products.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ProductsBySeasonComponent.razor"
+using System.Net.Http;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ProductsBySeasonComponent.razor"
+using System.Net.Http.Json;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/productbyseasoncomponent")]
     public partial class ProductsBySeasonComponent : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -96,6 +97,22 @@ using Kenkata_Adm_Products.Models;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 49 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ProductsBySeasonComponent.razor"
+        private ProductModel product;
+    private string Season { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Season = "1";
+        product = await Http.GetFromJsonAsync<ProductModel>("GetProductBySeason/" + Season);
+
+    } 
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591
