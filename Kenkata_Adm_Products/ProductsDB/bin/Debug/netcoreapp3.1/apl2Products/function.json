@@ -4,6 +4,7 @@
   "bindings": [
     {
       "type": "httpTrigger",
+      "route": "GetAllProducts",
       "methods": [
         "get"
       ],

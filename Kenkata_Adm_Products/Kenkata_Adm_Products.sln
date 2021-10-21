@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kenkata_Adm_Products", "Kenkata_Adm_Products\Kenkata_Adm_Products.csproj", "{B65B16D6-DDDC-4ABE-8CEB-E9A9021898D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsDB", "ProductsDB\ProductsDB.csproj", "{099BD611-F2D0-47FA-9575-B7545701662F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductsDB", "ProductsDB\ProductsDB.csproj", "{099BD611-F2D0-47FA-9575-B7545701662F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

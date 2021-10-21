@@ -13,10 +13,9 @@ namespace ProductsDB
 {
     class Product
     {
-
         [FunctionName("apl2Products")]
         public static async Task<IActionResult> Run(
-        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
+        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "GetAllProducts")] HttpRequest req,
         [CosmosDB(
             databaseName:"ProductDB",
             collectionName:"Products",
