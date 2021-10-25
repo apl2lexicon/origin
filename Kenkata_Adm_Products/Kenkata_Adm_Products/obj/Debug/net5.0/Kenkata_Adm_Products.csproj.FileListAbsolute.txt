@@ -470,7 +470,6 @@ C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\scoped
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\scopedcss\bundle\Kenkata_Adm_Products.styles.css
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\scopedcss\projectbundle\Kenkata_Adm_Products.bundle.scp.css
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata_Adm_Products.RazorTargetAssemblyInfo.cache
-C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata_Adm_Products.csproj.CopyComplete
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata_Adm_Products.dll
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\ref\Kenkata_Adm_Products.dll
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata_Adm_Products.pdb
