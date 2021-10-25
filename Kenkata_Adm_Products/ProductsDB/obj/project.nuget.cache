@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FqNh6/dGz0eNpdP5hE/1BzU719d+Te29TB8LxpB2JNAIqyuO+XgC/ib4byFd7LH/iH8QW84Ipw+aLGPVEL/6DQ==",
+  "dgSpecHash": "nOE/Qsgpl3/TQArZdVG1PzNdq14bxJI7ov8kSuO4jBEwKMgIlXYDOw6A0/ENYwdD1KujArmwlAiB70Sv1keE4A==",
   "success": true,
   "projectFilePath": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\ProductsDB\\ProductsDB.csproj",
   "expectedPackageFiles": [
@@ -30,8 +30,11 @@
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.azure.documentdb.core\\2.13.1\\microsoft.azure.documentdb.core.2.13.1.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.azure.webjobs\\3.0.25\\microsoft.azure.webjobs.3.0.25.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.azure.webjobs.core\\3.0.25\\microsoft.azure.webjobs.core.3.0.25.nupkg.sha512",
+    "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.azure.webjobs.extensions\\3.0.0\\microsoft.azure.webjobs.extensions.3.0.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.azure.webjobs.extensions.cosmosdb\\3.0.10\\microsoft.azure.webjobs.extensions.cosmosdb.3.0.10.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.azure.webjobs.extensions.http\\3.0.12\\microsoft.azure.webjobs.extensions.http.3.0.12.nupkg.sha512",
+    "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.azure.webjobs.host.storage\\3.0.0\\microsoft.azure.webjobs.host.storage.3.0.0.nupkg.sha512",
+    "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.azure.webjobs.script.extensionsmetadatagenerator\\1.1.8\\microsoft.azure.webjobs.script.extensionsmetadatagenerator.1.1.8.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -58,11 +61,12 @@
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\2.1.0\\microsoft.extensions.options.configurationextensions.2.1.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
-    "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.net.sdk.functions\\4.0.0\\microsoft.net.sdk.functions.4.0.0.nupkg.sha512",
+    "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.net.sdk.functions\\3.0.9\\microsoft.net.sdk.functions.3.0.9.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\ncrontab.signed\\3.3.0\\ncrontab.signed.3.3.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
@@ -136,6 +140,7 @@
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\system.runtime.handles\\4.3.0\\system.runtime.handles.4.3.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\system.runtime.interopservices\\4.3.0\\system.runtime.interopservices.4.3.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation\\4.3.0\\system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512",
+    "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\system.runtime.loader\\4.3.0\\system.runtime.loader.4.3.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\system.runtime.numerics\\4.3.0\\system.runtime.numerics.4.3.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\system.runtime.serialization.primitives\\4.1.1\\system.runtime.serialization.primitives.4.1.1.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
@@ -167,7 +172,8 @@
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\windowsazure.storage\\9.3.1\\windowsazure.storage.9.3.1.nupkg.sha512"
   ],
   "logs": []
 }

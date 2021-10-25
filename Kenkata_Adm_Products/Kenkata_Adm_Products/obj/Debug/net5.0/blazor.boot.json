@@ -210,11 +210,11 @@
       "mscorlib.dll": "sha256-heWnofXFSc\/TfAxrWpjQxeuS+nlIOs9YycfI2QGXGM8=",
       "netstandard.dll": "sha256-mbIVAluJ7cAx0vUQshB\/c1zEIK5JcYwIYxo\/BQ\/meRU=",
       "System.Private.CoreLib.dll": "sha256-FrZbEyy47f3RDuj77R5oHUGxSGEDgRRxykTjImrLqfM=",
-      "Kenkata_Adm_Products.dll": "sha256-OSXxaa9lz7lhMw3dSFpJ6bR6p4\/jJ8nuHAxN0leNV2c="
+      "Kenkata_Adm_Products.dll": "sha256-\/+ASpCVPF7EXrtFw9i1+YHfSi98uBtsVjHD0WYXqwi0="
     },
     "lazyAssembly": null,
     "pdb": {
-      "Kenkata_Adm_Products.pdb": "sha256-fLE2\/UhlGgNzNTg4ErBfRftd6JS\/3iHg9bVj8Zy6CVk="
+      "Kenkata_Adm_Products.pdb": "sha256-e\/jI7x0VJSMsum1fgigYI7UjnCeDnSeBb7xpf5g9OVQ="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-5ttRwTa4Rar530elwLdfGDeH9I9NX9MPyDl6zLi9uug=",

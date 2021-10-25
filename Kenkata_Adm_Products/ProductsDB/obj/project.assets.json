@@ -441,6 +441,20 @@
           "lib/netstandard2.0/Microsoft.Azure.WebJobs.dll": {}
         }
       },
+      "Microsoft.Azure.WebJobs.Extensions/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.WebJobs": "3.0.0",
+          "Microsoft.Azure.WebJobs.Host.Storage": "3.0.0",
+          "ncrontab.signed": "3.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.dll": {}
+        }
+      },
       "Microsoft.Azure.WebJobs.Extensions.CosmosDB/3.0.10": {
         "type": "package",
         "dependencies": {
@@ -471,6 +485,28 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.Http.dll": {}
+        }
+      },
+      "Microsoft.Azure.WebJobs.Host.Storage/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.WebJobs": "3.0.0",
+          "WindowsAzure.Storage": "9.3.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Azure.WebJobs.Host.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.WebJobs.Host.Storage.dll": {}
+        }
+      },
+      "Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator/1.1.8": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.Loader": "4.3.0"
+        },
+        "build": {
+          "build/_._": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
@@ -796,8 +832,15 @@
           "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {}
         }
       },
-      "Microsoft.NET.Sdk.Functions/4.0.0": {
+      "Microsoft.NET.Sdk.Functions/3.0.9": {
         "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.WebJobs": "[3.0.0, 3.1.0)",
+          "Microsoft.Azure.WebJobs.Extensions": "[3.0.0, 3.1.0)",
+          "Microsoft.Azure.WebJobs.Extensions.Http": "[3.0.0, 3.1.0)",
+          "Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator": "1.1.8",
+          "Newtonsoft.Json": "11.0.2"
+        },
         "build": {
           "build/Microsoft.NET.Sdk.Functions.props": {},
           "build/Microsoft.NET.Sdk.Functions.targets": {}
@@ -848,6 +891,23 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "ncrontab.signed/3.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Globalization": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.Net.Primitives": "4.0.11",
+          "System.Resources.ResourceManager": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/NCrontab.Signed.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/NCrontab.Signed.dll": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -2022,6 +2082,20 @@
           }
         }
       },
+      "System.Runtime.Loader/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Runtime.Loader.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/System.Runtime.Loader.dll": {}
+        }
+      },
       "System.Runtime.Numerics/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2608,6 +2682,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "WindowsAzure.Storage/9.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.2"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
+        }
       }
     }
   },
@@ -2973,6 +3060,18 @@
         "microsoft.azure.webjobs.core.nuspec"
       ]
     },
+    "Microsoft.Azure.WebJobs.Extensions/3.0.0": {
+      "sha512": "ggweM+aMoyrnRXWd3QjhJbo2DTR6acd/0Or4JB+m0cyQbP/2JhXIXnVHVSrJ7VVwkfwmC4bk6J4w8W8s1HwoaA==",
+      "type": "package",
+      "path": "microsoft.azure.webjobs.extensions/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.dll",
+        "microsoft.azure.webjobs.extensions.3.0.0.nupkg.sha512",
+        "microsoft.azure.webjobs.extensions.nuspec"
+      ]
+    },
     "Microsoft.Azure.WebJobs.Extensions.CosmosDB/3.0.10": {
       "sha512": "ksJ1HrmiZTOkBW5i1R3o1eEAeI5IxxwT9llT6eAprOvlyxMHYztAuVew4vd2EJNDtEoPSJRHefR2TMEeJ3ntBQ==",
       "type": "package",
@@ -2997,6 +3096,65 @@
         "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.Http.xml",
         "microsoft.azure.webjobs.extensions.http.3.0.12.nupkg.sha512",
         "microsoft.azure.webjobs.extensions.http.nuspec"
+      ]
+    },
+    "Microsoft.Azure.WebJobs.Host.Storage/3.0.0": {
+      "sha512": "k5FpRgdtD4u9NtCX9/PyksEM/SD2XfDzVvPdUQ/8cznMC6xz8FfC/n2Gpzg2uArGibAVjcfmTAqyHATzvgJuzQ==",
+      "type": "package",
+      "path": "microsoft.azure.webjobs.host.storage/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Azure.WebJobs.Host.Storage.dll",
+        "microsoft.azure.webjobs.host.storage.3.0.0.nupkg.sha512",
+        "microsoft.azure.webjobs.host.storage.nuspec"
+      ]
+    },
+    "Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator/1.1.8": {
+      "sha512": "xPCDi0GvaWOP5CLwzdxMTrZcJdZLvgvocL59mmMoFPZ49S9rsWxXeFBeunHJuIdlkBHo/v939GJGlhe70Vlvtw==",
+      "type": "package",
+      "path": "microsoft.azure.webjobs.script.extensionsmetadatagenerator/1.1.8",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.props",
+        "build/Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.targets",
+        "microsoft.azure.webjobs.script.extensionsmetadatagenerator.1.1.8.nupkg.sha512",
+        "microsoft.azure.webjobs.script.extensionsmetadatagenerator.nuspec",
+        "tools/net46/Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.dll",
+        "tools/netstandard2.0/Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.dll",
+        "tools/netstandard2.0/Microsoft.Build.Framework.dll",
+        "tools/netstandard2.0/Microsoft.Build.Utilities.Core.dll",
+        "tools/netstandard2.0/System.AppContext.dll",
+        "tools/netstandard2.0/System.Collections.Concurrent.dll",
+        "tools/netstandard2.0/System.Collections.NonGeneric.dll",
+        "tools/netstandard2.0/System.IO.FileSystem.Primitives.dll",
+        "tools/netstandard2.0/System.Linq.dll",
+        "tools/netstandard2.0/System.ObjectModel.dll",
+        "tools/netstandard2.0/System.Private.DataContractSerialization.dll",
+        "tools/netstandard2.0/System.Reflection.Emit.ILGeneration.dll",
+        "tools/netstandard2.0/System.Reflection.Emit.Lightweight.dll",
+        "tools/netstandard2.0/System.Reflection.Emit.dll",
+        "tools/netstandard2.0/System.Reflection.TypeExtensions.dll",
+        "tools/netstandard2.0/System.Resources.Reader.dll",
+        "tools/netstandard2.0/System.Runtime.Loader.dll",
+        "tools/netstandard2.0/System.Runtime.Serialization.Primitives.dll",
+        "tools/netstandard2.0/System.Runtime.Serialization.Xml.dll",
+        "tools/netstandard2.0/System.Text.RegularExpressions.dll",
+        "tools/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "tools/netstandard2.0/System.Threading.Thread.dll",
+        "tools/netstandard2.0/System.Threading.ThreadPool.dll",
+        "tools/netstandard2.0/System.Threading.dll",
+        "tools/netstandard2.0/System.Xml.ReaderWriter.dll",
+        "tools/netstandard2.0/System.Xml.XmlDocument.dll",
+        "tools/netstandard2.0/System.Xml.XmlSerializer.dll",
+        "tools/netstandard2.0/generator/Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.Console.deps.json",
+        "tools/netstandard2.0/generator/Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.Console.dll",
+        "tools/netstandard2.0/generator/Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.Console.dll.config",
+        "tools/netstandard2.0/generator/Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.Console.pdb",
+        "tools/netstandard2.0/generator/Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.Console.runtimeconfig.dev.json",
+        "tools/netstandard2.0/generator/Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.Console.runtimeconfig.json"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
@@ -3426,10 +3584,10 @@
         "microsoft.net.http.headers.nuspec"
       ]
     },
-    "Microsoft.NET.Sdk.Functions/4.0.0": {
-      "sha512": "fmSAteWJBhrLZEpRzaJnRpFVx9A20NR2ju82LaeH2NI0YoxjmqIEOqrrpDH6CQ43+EVZrGQ0Vo8pfgABaz6Jtw==",
+    "Microsoft.NET.Sdk.Functions/3.0.9": {
+      "sha512": "bkTLPBezGR1riv/tDAOMtgIFpLUDs6Plv/8ZKBIAuduXT0bDZ10NCqhJ9goxmAcnebYSwjzbKfRMbtCVExPNIg==",
       "type": "package",
-      "path": "microsoft.net.sdk.functions/4.0.0",
+      "path": "microsoft.net.sdk.functions/3.0.9",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -3440,15 +3598,17 @@
         "build/Microsoft.NET.Sdk.Functions.Publish.ZipDeploy.targets",
         "build/Microsoft.NET.Sdk.Functions.Publish.props",
         "build/Microsoft.NET.Sdk.Functions.Publish.targets",
+        "build/Microsoft.NET.Sdk.Functions.Version.props",
         "build/Microsoft.NET.Sdk.Functions.props",
         "build/Microsoft.NET.Sdk.Functions.targets",
-        "microsoft.net.sdk.functions.4.0.0.nupkg.sha512",
+        "microsoft.net.sdk.functions.3.0.9.nupkg.sha512",
         "microsoft.net.sdk.functions.nuspec",
-        "tools/net6.0/Microsoft.NET.Sdk.Functions.Generator.dll",
-        "tools/net6.0/Microsoft.NET.Sdk.Functions.Generator.runtimeconfig.json",
-        "tools/net6.0/Microsoft.NET.Sdk.Functions.MSBuild.dll",
-        "tools/net6.0/Mono.Cecil.dll",
-        "tools/net6.0/Newtonsoft.Json.dll"
+        "tools/netcoreapp3.1/Microsoft.NET.Sdk.Functions.Generator.dll",
+        "tools/netcoreapp3.1/Microsoft.NET.Sdk.Functions.Generator.runtimeconfig.json",
+        "tools/netcoreapp3.1/Microsoft.NET.Sdk.Functions.MSBuild.dll",
+        "tools/netcoreapp3.1/Microsoft.NET.Sdk.Functions.dll",
+        "tools/netcoreapp3.1/Mono.Cecil.dll",
+        "tools/netcoreapp3.1/Newtonsoft.Json.dll"
       ]
     },
     "Microsoft.NETCore.Platforms/3.1.0": {
@@ -3548,6 +3708,21 @@
         "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "ncrontab.signed/3.3.0": {
+      "sha512": "w+fVX+uCk3C0nR7BDjWAmUzDQPNAaBusTPljWehx/2cbBTxuKm81sCTebwRnJtHfS+38xbqF7NiiwPWjRMKiFQ==",
+      "type": "package",
+      "path": "ncrontab.signed/3.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "COPYING.txt",
+        "lib/net35/NCrontab.Signed.dll",
+        "lib/netstandard1.0/NCrontab.Signed.dll",
+        "lic/OpenSymphony.txt",
+        "ncrontab.signed.3.3.0.nupkg.sha512",
+        "ncrontab.signed.nuspec"
       ]
     },
     "NETStandard.Library/1.6.1": {
@@ -6708,6 +6883,38 @@
         "system.runtime.interopservices.runtimeinformation.nuspec"
       ]
     },
+    "System.Runtime.Loader/4.3.0": {
+      "sha512": "DHMaRn8D8YCK2GG2pw+UzNxn/OHVfaWx7OTLBD/hPegHZZgcZh3H6seWegrC4BYwsfuGrywIuT+MQs+rPqRLTQ==",
+      "type": "package",
+      "path": "system.runtime.loader/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/_._",
+        "lib/netstandard1.5/System.Runtime.Loader.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/netstandard1.5/System.Runtime.Loader.dll",
+        "ref/netstandard1.5/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/de/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/es/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/fr/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/it/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ja/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ko/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ru/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hans/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hant/System.Runtime.Loader.xml",
+        "system.runtime.loader.4.3.0.nupkg.sha512",
+        "system.runtime.loader.nuspec"
+      ]
+    },
     "System.Runtime.Numerics/4.3.0": {
       "sha512": "yMH+MfdzHjy17l2KESnPiF2dwq7T+xLnSJar7slyimAkUh/gTrS9/UQOtv7xarskJ2/XDSNvfLGOBQPjL7PaHQ==",
       "type": "package",
@@ -8203,6 +8410,30 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "WindowsAzure.Storage/9.3.1": {
+      "sha512": "NooNF4glP6BO7U4dno/xSfiEVVIv6OFcFfisX24Us2CZa9NQR3TSVEj9eVUlM5rLat5H9CHxk6M/mNSIaq7Vrw==",
+      "type": "package",
+      "path": "windowsazure.storage/9.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.WindowsAzure.Storage.dll",
+        "lib/net45/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/net45/Microsoft.WindowsAzure.Storage.xml",
+        "lib/netstandard1.0/Microsoft.WindowsAzure.Storage.dll",
+        "lib/netstandard1.0/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll",
+        "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/win8/Microsoft.WindowsAzure.Storage.dll",
+        "lib/win8/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/wp8/Microsoft.WindowsAzure.Storage.dll",
+        "lib/wp8/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/wpa/Microsoft.WindowsAzure.Storage.dll",
+        "lib/wpa/Microsoft.WindowsAzure.Storage.pdb",
+        "windowsazure.storage.9.3.1.nupkg.sha512",
+        "windowsazure.storage.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -8211,7 +8442,7 @@
       "Microsoft.Azure.Cosmos >= 3.22.0",
       "Microsoft.Azure.WebJobs.Extensions.CosmosDB >= 3.0.10",
       "Microsoft.Azure.WebJobs.Extensions.Http >= 3.0.12",
-      "Microsoft.NET.Sdk.Functions >= 4.0.0"
+      "Microsoft.NET.Sdk.Functions >= 3.0.9"
     ]
   },
   "packageFolders": {
@@ -8276,7 +8507,7 @@
           },
           "Microsoft.NET.Sdk.Functions": {
             "target": "Package",
-            "version": "[4.0.0, )"
+            "version": "[3.0.9, )"
           }
         },
         "imports": [

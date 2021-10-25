@@ -62,7 +62,7 @@
             },
             "Microsoft.NET.Sdk.Functions": {
               "target": "Package",
-              "version": "[4.0.0, )"
+              "version": "[3.0.9, )"
             }
           },
           "imports": [
