@@ -694,3 +694,6 @@ C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\build-
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\build-gz\XS67B+Sa.gz
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\build-gz\EX8Bd8Dz.gz
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\build-gz\ZsKwj2MX.gz
+C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\bin\Debug\net5.0\wwwroot\_framework\System.Data.SqlClient.dll.gz
+C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\bin\Debug\net5.0\wwwroot\_framework\System.Data.SqlClient.dll
+C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\build-gz\5jW81OUI.gz

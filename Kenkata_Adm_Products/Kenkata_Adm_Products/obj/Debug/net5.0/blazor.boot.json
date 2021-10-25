@@ -39,6 +39,7 @@
       "Microsoft.Win32.SystemEvents.dll": "sha256-56MWX7GCuiW+O0EPzkUo0jj6T\/mhpVB6x+UFQtaS2qE=",
       "Newtonsoft.Json.dll": "sha256-GViDVnAQuA8FMpwwB\/9uaspcQefOSU1hpfK4bC07Eds=",
       "System.Configuration.ConfigurationManager.dll": "sha256-Rmj4lST8tNcZUOCtfg1W5eXbLHDjla1J99tqgWTMUNY=",
+      "System.Data.SqlClient.dll": "sha256-MEhlg3Y9xPg4PVw50tdHctlzHHqHTALt1dOljI84JJo=",
       "System.Drawing.Common.dll": "sha256-E+\/s4U4Xt\/iFr\/+Dd7ZSqXXAOJZKgnOAW4C5r7OPcHc=",
       "System.IO.Pipelines.dll": "sha256-3ET+mpR7F058YRj9YaLHOVXBqOW6iUxtIpeiKPYw4PA=",
       "System.Security.Cryptography.ProtectedData.dll": "sha256-hgT40uPpMnELY0cwspokXIls6t\/WSmIAHlgukXFTLxM=",
@@ -209,11 +210,11 @@
       "mscorlib.dll": "sha256-heWnofXFSc\/TfAxrWpjQxeuS+nlIOs9YycfI2QGXGM8=",
       "netstandard.dll": "sha256-mbIVAluJ7cAx0vUQshB\/c1zEIK5JcYwIYxo\/BQ\/meRU=",
       "System.Private.CoreLib.dll": "sha256-FrZbEyy47f3RDuj77R5oHUGxSGEDgRRxykTjImrLqfM=",
-      "Kenkata_Adm_Products.dll": "sha256-oILBEKqEjVOYxlPP6Tg7+i7kXJd9qDiwV+LNjsj458A="
+      "Kenkata_Adm_Products.dll": "sha256-RCDFF6SqI8vkQ75t9FOXI13ckFKP8DTkv42lOFJFX\/Y="
     },
     "lazyAssembly": null,
     "pdb": {
-      "Kenkata_Adm_Products.pdb": "sha256-gBLsL4EFBBlrkZ9cy31tDRKYWqX9h6b\/9U7Ftj\/Jgu4="
+      "Kenkata_Adm_Products.pdb": "sha256-xx7R165BjODkt6r6J+rOJuA464iiE8uMM7W9+shXm54="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-5ttRwTa4Rar530elwLdfGDeH9I9NX9MPyDl6zLi9uug=",
