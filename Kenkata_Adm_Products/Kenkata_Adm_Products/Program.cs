@@ -286,5 +286,23 @@ namespace Kenkata_Adm_Products
             cmd.Parameters.AddWithValue("@APrice", orderLine.APrice);
             cmd.Parameters.AddWithValue("@Created", orderLine.Created);
         }
+
+
+        public static void DeleteOrderLine(int orderLineNo)
+        {
+            using var conn = new SqlConnection(@"Server=tcp:apl2sql.database.windows.net,1433;Initial Catalog=apl2sql;Persist Security Info=False;User ID=apl2sql;Password=LexApl2_21;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
+            conn.Open();
+
+            using var cmd = new SqlCommand("DELETE FROM OrderLine o WHERE o.OrderLineNr = @Id", conn);
+            cmd.Parameters.AddWithValue("@Id", orderLineNo);
+
+            int rowsAffected = cmd.ExecuteNonQuery();
+
+            if (rowsAffected > 0)
+            {
+                Console.WriteLine("Order line + " + orderLineNo + " is deleted.");
+            }
+        }
     }
 }
