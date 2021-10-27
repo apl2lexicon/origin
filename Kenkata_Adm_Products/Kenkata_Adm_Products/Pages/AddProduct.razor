@@ -103,7 +103,24 @@
 @code {
     private void SaveProduct()
     {
-        
+
     }
+
+
+    //[HttpPost]
+    //public async Task<IActionResult> Create(ProductModel product)
+    //{
+    //    var url = "https://apl2.documents.azure.com:443/";
+    //    var db = "kenkataproductdb";
+    //    var key = "";
+
+    //    CosmosClient client = new CosmosClient(url, key);
+    //    Database database = await client.CreateDatabaseIfNotExistAsync(db);
+    //    Container containers = await database.CreateContainerIfNotExistAsync("Product", "/id");
+
+    //    var response = await containers.CreateItemAsync<ProductModel>(product);
+
+    //    return View();
+    //}
 
 }
