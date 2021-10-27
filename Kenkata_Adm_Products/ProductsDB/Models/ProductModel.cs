@@ -6,7 +6,7 @@ namespace Kenkata_Adm_Products.Models
 {
     public class ProductModel
     {
-        public string id { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
         public string CustomerCathegory { get; set; }
         public string Season { get; set; }
