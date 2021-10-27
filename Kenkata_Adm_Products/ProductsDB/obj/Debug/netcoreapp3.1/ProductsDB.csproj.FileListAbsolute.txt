@@ -83,6 +83,7 @@ C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\bin\Debug\netcoreapp3.1\runtimes\
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsDB.csproj.AssemblyReference.cache
+C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsDB.GeneratedMSBuildEditorConfig.editorconfig
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsDB.AssemblyInfoInputs.cache
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsDB.AssemblyInfo.cs
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsDB.csproj.CoreCompileInputs.cache
