@@ -116,7 +116,7 @@ using System.Threading;
 
         protected override void OnInitialized()
         {
-            var timer = new Timer(new TimerCallback(_ => InvokeAsync(() => StateHasChanged())), null, 10, 5000);
+            var timer = new Timer(new TimerCallback(_ => InvokeAsync(() => StateHasChanged())), null, 3000, 3000);
         }
 
         protected override async Task OnAfterRenderAsync(bool firstRender)

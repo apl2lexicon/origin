@@ -88,3 +88,4 @@ C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsD
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsDB.csproj.CoreCompileInputs.cache
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsDB.dll
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsDB.pdb
+C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsDB.csproj.AssemblyReference.cache
