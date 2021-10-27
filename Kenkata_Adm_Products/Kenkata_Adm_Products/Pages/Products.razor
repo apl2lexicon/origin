@@ -1,0 +1,234 @@
+﻿@page "/products"
+<div class="products mt-5">
+    <div class="container">
+        <div class="filter-sidebar">
+            <div class="btn-group">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                    Filter
+                </button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <p style="color: #20D3C2; font-weight: bold;">Product Categories</p>
+                        <p> <a href="#">Men <span>18 </span></a></p>
+                        <p><a href="#">Women's <span>23</span></a></p>
+                        <p><a href="#">Kids <span>32</span></a></p>
+                        <p><a href="#">Hats <span>12</span></a></p>
+                        <p class="selected"><a href="#" style="color: #20D3C2;">Sunglasses <span style="color: white; background-color: #20D3C2;">15</span></a></p>
+                        <p><a href="#">Shoes <span>12</span></a></p>
+                        <p><a href="#">Watches <span>20</span></a></p>
+                    </ul>
+                    <ul class="mt-4">
+                        <p style="color: #20D3C2; font-weight: bold;">Filter by Price</p>
+                        <input type="range" class="form-range" id="customRange1">
+                    </ul>
+                    <ul class="mt-4">
+                        <p style="color: #20D3C2; font-weight: bold;">Filter by Color</p>
+                        <a href="#">
+                            <div class="row color-filter mx-auto my-3">
+                                <div class="col col-1 rounded" style="background-color: black;"></div>
+                                <div class="col col-9">Black</div>
+                                <div class="col col-1 border">12</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="row color-filter mx-auto my-3">
+                                <div class="col col-1 rounded" style="background-color: gray;"></div>
+                                <div class="col col-9">Gray</div>
+                                <div class="col col-1 border">12</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="row color-filter mx-auto my-3">
+                                <div class="col col-1 rounded" style="background-color: red;"></div>
+                                <div class="col col-9">Red</div>
+                                <div class="col col-1 border">12</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="row color-filter mx-auto my-3">
+                                <div class="col col-1 rounded" style="background-color: green;"></div>
+                                <div class="col col-9">Green</div>
+                                <div class="col col-1 border" style="color:white; background-color: #20D3C2;">12</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="row color-filter mx-auto my-3">
+                                <div class="col col-1 rounded" style="background-color: orange;"></div>
+                                <div class="col col-9">Orange</div>
+                                <div class="col col-1 border">12</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="row color-filter mx-auto my-3">
+                                <div class="col col-1 rounded" style="background-color: brown;"></div>
+                                <div class="col col-9">Brown</div>
+                                <div class="col col-1 border text-center">12</div>
+                            </div>
+                        </a>
+                    </ul>
+                    <ul class="mt-4">
+                        <p style="color: #20D3C2; font-weight: bold;">Filter by Size</p>
+                        <a href="#">
+                            <div class="row color-filter mx-auto my-3">
+                                <div class="col col-10">XS</div>
+                                <div class="col col-1 border text-center">12</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="row color-filter mx-auto my-3">
+                                <div class="col col-10">S</div>
+                                <div class="col col-1 border text-center">12</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="row color-filter mx-auto my-3">
+                                <div class="col col-10">M</div>
+                                <div class="col col-1 border text-center">12</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="row color-filter mx-auto my-3">
+                                <div class="col col-10">L</div>
+                                <div class="col col-1 border text-center">12</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="row color-filter mx-auto my-3">
+                                <div class="col col-10" style="color: #20D3C2;">XL</div>
+                                <div class="col col-1 border text-center" style="color:white; background-color: #20D3C2;">12</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="row color-filter mx-auto my-3">
+                                <div class="col col-10">XXL</div>
+                                <div class="col col-1 border text-center">12</div>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="product-page">
+            <div class="items">
+                <div class="item">
+                    <div class="item-image">
+                        <div class="div">
+                            <div class="item-price">
+                                12$
+                            </div>
+                        </div>
+                        <img src="/images/shirt.png" alt="">
+                    </div>
+                    <div class="item-name-price">
+                        <div class="item-name">Circle pattern girls shirt</div>
+                        <div class="item-buy">
+                            <a style="color: inherit;" href="#">
+                                <i class="fas fa-cart-plus fa-lg"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <div class="div">
+                            <div class="item-price">
+                                12$
+                            </div>
+                        </div>
+                        <img src="/images/shirt.png" alt="">
+                    </div>
+                    <div class="item-name-price">
+                        <div class="item-name">Circle pattern girls shirt</div>
+                        <div class="item-buy">
+                            <a style="color: inherit;" href="#">
+                                <i class="fas fa-cart-plus fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <div class="div">
+                            <div class="item-price">
+                                12$
+                            </div>
+                        </div>
+                        <img src="/images/shirt.png" alt="">
+                    </div>
+                    <div class="item-name-price">
+                        <div class="item-name">Circle pattern girls shirt</div>
+                        <div class="item-buy">
+                            <a style="color: inherit;" href="#">
+                                <i class="fas fa-cart-plus fa-lg"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <div class="div">
+                            <div class="item-price">
+                                12$
+                            </div>
+                        </div>
+                        <img src="/images/shirt.png" alt="">
+                    </div>
+                    <div class="item-name-price">
+                        <div class="item-name">Circle pattern girls shirt</div>
+                        <div class="item-buy">
+                            <a style="color: inherit;" href="#">
+                                <i class="fas fa-cart-plus fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <div class="div">
+                            <div class="item-price">
+                                12$
+                            </div>
+                        </div>
+                        <img src="/images/shirt.png" alt="">
+                    </div>
+                    <div class="item-name-price">
+                        <div class="item-name">Circle pattern girls shirt</div>
+                        <div class="item-buy">
+                            <a style="color: inherit;" href="#">
+                                <i class="fas fa-cart-plus fa-lg"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-image">
+                        <div class="div">
+                            <div class="item-price">
+                                12$
+                            </div>
+                        </div>
+                        <img src="/images/shirt.png" alt="">
+                    </div>
+                    <div class="item-name-price">
+                        <div class="item-name">Circle pattern girls shirt</div>
+                        <div class="item-buy">
+                            <a style="color: inherit;" href="#">
+                                <i class="fas fa-cart-plus fa-lg"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+@code {
+
+}
