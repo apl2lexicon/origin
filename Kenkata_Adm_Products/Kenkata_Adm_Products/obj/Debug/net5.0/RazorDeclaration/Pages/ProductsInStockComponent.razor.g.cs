@@ -13,6 +13,20 @@ namespace Kenkata_Adm_Products.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
+#line 1 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+using System.Net.Http;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+using System.Net.Http.Json;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
@@ -82,22 +96,8 @@ using System.Threading;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ProductByIdComponent.razor"
-using System.Net.Http;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 3 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ProductByIdComponent.razor"
-using System.Net.Http.Json;
-
-#line default
-#line hidden
-#nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/productbyidcomponent")]
-    public partial class ProductByIdComponent : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/productsinstockcomponent")]
+    public partial class ProductsInStockComponent : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -105,22 +105,13 @@ using System.Net.Http.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 49 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ProductByIdComponent.razor"
-        private ProductModel product;
-    private string Id { get; set; }
+#line 45 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ProductsInStockComponent.razor"
+       
+    private ProductModel[] products;
 
     protected override async Task OnInitializedAsync()
     {
-        try
-        {
-            Id = "1";
-            product = await Http.GetFromJsonAsync<ProductModel>("GetProductById/" + Id);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e.StackTrace);
-
-        }
+        products = await Http.GetFromJsonAsync<ProductModel[]>("GetProductsInStock");
     }
 
 #line default

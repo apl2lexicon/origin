@@ -11,37 +11,39 @@
 
 @if (product == null)
 {
-<p><em>Loading...</em></p> }
+    <p><em>Loading...</em></p> 
+}
 else
 {
-<table class="table">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Customer Category</th>
-            <th>Season</th>
-            <th>Category</th>
-            <th>Brand</th>
-            <th>Color</th>
-            <th>Size</th>
-            <th>InStock</th>
-            <th>Price</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>@product.id</td>
-            <td>@product.CustomerCathegory</td>
-            <td>@product.Season</td>
-            <td>@product.Cathegory</td>
-            <td>@product.Brand</td>
-            <td>@product.Color</td>
-            <td>@product.Size</td>
-            <td>@product.InStock</td>
-            <td>@product.Price</td>
-        </tr>
-    </tbody>
-</table>}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Customer Category</th>
+                <th>Season</th>
+                <th>Category</th>
+                <th>Brand</th>
+                <th>Color</th>
+                <th>Size</th>
+                <th>InStock</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@product.id</td>
+                <td>@product.CustomerCathegory</td>
+                <td>@product.Season</td>
+                <td>@product.Cathegory</td>
+                <td>@product.Brand</td>
+                <td>@product.Color</td>
+                <td>@product.Size</td>
+                <td>@product.InStock</td>
+                <td>@product.Price</td>
+            </tr>
+        </tbody>
+    </table>
+}
 
 
 @code { private ProductModel product;
@@ -49,8 +51,15 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        Id = "1";
-        product = await Http.GetFromJsonAsync<ProductModel>("GetProductById/" + Id);
+        try
+        {
+            Id = "1";
+            product = await Http.GetFromJsonAsync<ProductModel>("GetProductById/" + Id);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.StackTrace);
 
-    } 
+        }
+    }
 }
