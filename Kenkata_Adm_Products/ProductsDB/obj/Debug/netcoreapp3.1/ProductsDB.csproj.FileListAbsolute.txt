@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\bin\Debug\netcoreapp3.1\Microsoft.Azure.Cosmos.ServiceInterop.dll
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\bin\Debug\netcoreapp3.1\Cosmos.CRTCompat.dll
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\bin\Debug\netcoreapp3.1\host.json
@@ -90,3 +91,5 @@ C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsD
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsDB.csproj.CopyComplete
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsDB.dll
 C:\DevOps\Code\Kenkata_Adm_Products\ProductsDB\obj\Debug\netcoreapp3.1\ProductsDB.pdb
+=======
+>>>>>>> origin/Tommy

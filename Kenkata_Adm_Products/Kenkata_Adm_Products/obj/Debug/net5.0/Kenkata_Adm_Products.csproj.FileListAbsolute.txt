@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\bin\Debug\net5.0\wwwroot\_framework\blazor.boot.json
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\bin\Debug\net5.0\Microsoft.Azure.Cosmos.ServiceInterop.dll
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\bin\Debug\net5.0\Cosmos.CRTCompat.dll
@@ -703,3 +704,5 @@ C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkat
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata_Adm_Products.dll
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\ref\Kenkata_Adm_Products.dll
 C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata_Adm_Products.pdb
+=======
+>>>>>>> origin/Tommy
