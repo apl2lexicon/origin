@@ -1,0 +1,73 @@
+﻿@page "/shop"
+<div class="shop-content">
+    <dvi class="showcase">
+        <div class="items d-flex mx-auto">
+            <div class="offer d-flex flex-column justify-content-center">
+                <div class="text d-flex align-items-end">
+                    <span class="play-36-bold" style="color: white;">
+                        New Customer<br>Can Get
+                        <span style="color:#20D3C2;">
+                            30% off
+                        </span>
+                    </span>
+                </div>
+                <div class="button">
+                    <button>
+                        LEARN MORE
+                    </button>
+                </div>
+            </div>
+            <div class="image  d-flex justify-content-center align-items-center">
+                <img src="/images/shoes.png" alt="">
+            </div>
+        </div>
+    </dvi>
+    <div class="view-customizer">
+        <div class="items mx-auto d-flex">
+            <div class="links d-flex align-items-center">
+                <nav aria-label="breadcrumb">
+                    <h4>Shop</h4>
+                    <ol class="breadcrumb page-links">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="customizer-items d-flex justify-content-end align-items-center">
+                <div class="nr-per-page">
+                    <ul class="nav ">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">9</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">12</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">18</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">24</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="view-as">
+                    <div class="item-1"><i class="fas fa-th-list"></i></div>
+                    <div class="item-2"><i class="fas fa-th-large"></i></div>
+                    <div class="item-3 "><i class="fas fa-th"></i></div>
+                </div>
+                <div class="sorting">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        Default sorting
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Products">
+       <Products/>
+    </div>
+</div>
+    @code {
+
+    }
