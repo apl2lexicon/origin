@@ -96,7 +96,7 @@ using System.Threading;
 #line default
 #line hidden
 #nullable disable
-    public partial class Products : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class Brands : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
