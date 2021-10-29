@@ -46,20 +46,13 @@ else
 }
 
 
-@code { private ProductModel product;
+@code { 
+    private ProductModel product;
     private string Id { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        try
-        {
-            Id = "1";
-            product = await Http.GetFromJsonAsync<ProductModel>("GetProductById/" + Id);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e.StackTrace);
-
-        }
+        Id = "1";
+        product = await Http.GetFromJsonAsync<ProductModel>("GetProductById/" + Id);
     }
 }

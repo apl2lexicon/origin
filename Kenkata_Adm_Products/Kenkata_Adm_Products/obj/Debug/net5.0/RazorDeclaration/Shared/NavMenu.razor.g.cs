@@ -104,7 +104,7 @@ using System.Threading;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 97 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Shared\NavMenu.razor"
+#line 103 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
