@@ -8,7 +8,7 @@ namespace Kenkata_Adm_Products.Models
     {
         public string id { get; set; }
         public string Name { get; set; }
-        public string CustomerCathegory { get; set; }
+        public string CustomerCategory { get; set; }
         public string Season { get; set; }
         public string Cathegory { get; set; }
         public string Brand { get; set; }

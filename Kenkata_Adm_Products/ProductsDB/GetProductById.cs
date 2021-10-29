@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Kenkata_Adm_Products.Models;
 using System.Linq;
+using System;
 
 namespace ProductsDB
 {
@@ -24,6 +25,7 @@ namespace ProductsDB
             )] IEnumerable<ProductModel> products,
                 ILogger log)
         {
+            Console.WriteLine("Number of records found: " + products.Count());
 
             return new OkObjectResult(products);
         }
