@@ -9562,8 +9562,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ibraheem\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -9571,14 +9571,15 @@
       "projectUniqueName": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\Kenkata_Adm_Products\\Kenkata_Adm_Products.csproj",
       "projectName": "Kenkata_Adm_Products",
       "projectPath": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\Kenkata_Adm_Products\\Kenkata_Adm_Products.csproj",
-      "packagesPath": "C:\\Users\\Ibraheem\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\",
       "outputPath": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\Kenkata_Adm_Products\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ibraheem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tommy J Strömbäck\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9639,7 +9640,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
-            "version": "[5.0.9, 5.0.9]"
+            "version": "[5.0.11, 5.0.11]"
           }
         ],
         "frameworkReferences": {
@@ -9647,7 +9648,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
