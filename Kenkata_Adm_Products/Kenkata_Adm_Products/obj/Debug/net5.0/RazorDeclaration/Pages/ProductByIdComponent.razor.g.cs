@@ -105,7 +105,7 @@ using System.Net.Http.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 49 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ProductByIdComponent.razor"
+#line 79 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ProductByIdComponent.razor"
         
     private ProductModel product;
     private string Id { get; set; }
