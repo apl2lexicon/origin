@@ -1,0 +1,161 @@
+﻿@page "/navbar"
+<div class="items mx-auto">
+    <div class="header">
+        <div class="top-head d-flex flex-row align-items-center">
+            <div class="left d-flex justify-content-start">
+                <ul class="nav top-links">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ENG</a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a class="dropdown-item" href="#">SE</a></li>
+                            <li><a class="dropdown-item" href="#">....</a></li>
+                            <li><a class="dropdown-item" href="#">....</a></li>
+                            <li><a class="dropdown-item" href="#">.....</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">USD</a>
+                        <ul class="dropdown-menu dropdown-menu-right ">
+                            <li><a class="dropdown-item" href="#">SEK</a></li>
+                            <li><a class="dropdown-item" href="#">....</a></li>
+                            <li><a class="dropdown-item" href="#">....</a></li>
+                            <li><a class="dropdown-item" href="#">.....</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="right d-flex justify-content-end">
+                <ul class="nav top-links">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Newsletter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content d-flex align-items-center">
+            <div class="logo d-flex"><a href=""><img src="./logo.png" alt=""></a></div>
+            <div class="search d-flex">
+                <form>
+                    <input type="text" placeholder="Search products...">
+                    <input class="input-btn" value="Search" type="submit">
+                </form>
+            </div>
+            <div class="customer d-flex">
+                <ul>
+                    <a href=""><i class="fa fa-user"> <span class="account"> My Account</span></i></a>
+                    <a href=""><i class="fas fa-heart"></i></a>
+                    <a href=""><i class="fas fa-random"></i></a>
+                    <a href="">
+                        <i class="fas fa-shopping-bag">
+                            <span class="shopcart ">0</span> <span class="total"> 0$</span>
+                        </i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-content d-flex">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav bg-light">
+                        <li class="nav-item dropdown browse-categories">
+                            <a class="nav-link dropdown-toggle  " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fas fa-bars mx-3"></i>Browse Categories</a>
+                            <ul class="dropdown-menu categories-items">
+                                <li><a class="dropdown-item" href="#">Men's</a></li>
+                                <li><a class="dropdown-item" href="#">Women's</a></li>
+                                <li><a class="dropdown-item" href="#">Kids</a></li>
+                                <li><a class="dropdown-item" href="#">Hats</a></li>
+                                <li><a class="dropdown-item" href="#">Sunglasses</a></li>
+                                <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                <li><a class="dropdown-item" href="#">Watches</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">link</a></li>
+                            </ul>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">link</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">link</a></li>
+                            </ul>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">link</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">link</a></li>
+                            </ul>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">link</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">link</a></li>
+                            </ul>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">link</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="special-offer d-flex">
+                        <button class="btn">SPECIAL OFFER</button>
+                    </div>
+                </div>
+
+            </nav>
+            <div class=" customer-mobile d-flex align-items-center">
+                <ul>
+                    <a href=""><i class="fa fa-user"> <span class="account">My Account</span></i></a>
+                    <a href=""><i class="fas fa-heart"></i></a>
+                    <a href=""><i class="fas fa-random"></i></a>
+                    <a href="">
+                        <i class="fas fa-shopping-bag">
+                            <span class="shopcart">0</span> <span class="total">
+                                300$
+                            </span>
+                        </i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    @code {
+
+    }
