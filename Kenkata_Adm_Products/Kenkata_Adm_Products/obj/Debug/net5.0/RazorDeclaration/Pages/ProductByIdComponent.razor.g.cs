@@ -105,16 +105,16 @@ using System.Net.Http.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 47 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ProductByIdComponent.razor"
-        private ProductModel product;
+#line 79 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ProductByIdComponent.razor"
+        
+    private ProductModel product;
     private string Id { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
         Id = "1";
         product = await Http.GetFromJsonAsync<ProductModel>("GetProductById/" + Id);
-
-    } 
+    }
 
 #line default
 #line hidden
