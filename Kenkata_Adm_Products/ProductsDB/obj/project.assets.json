@@ -8449,7 +8449,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mats-\\.nuget\\packages\\": {},
+    "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -8458,14 +8458,14 @@
       "projectUniqueName": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\ProductsDB\\ProductsDB.csproj",
       "projectName": "ProductsDB",
       "projectPath": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\ProductsDB\\ProductsDB.csproj",
-      "packagesPath": "C:\\Users\\mats-\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\",
       "outputPath": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\ProductsDB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mats-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tommy J Strömbäck\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
