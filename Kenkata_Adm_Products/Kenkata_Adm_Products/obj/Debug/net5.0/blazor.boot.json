@@ -210,27 +210,11 @@
       "mscorlib.dll": "sha256-heWnofXFSc\/TfAxrWpjQxeuS+nlIOs9YycfI2QGXGM8=",
       "netstandard.dll": "sha256-mbIVAluJ7cAx0vUQshB\/c1zEIK5JcYwIYxo\/BQ\/meRU=",
       "System.Private.CoreLib.dll": "sha256-FrZbEyy47f3RDuj77R5oHUGxSGEDgRRxykTjImrLqfM=",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "Kenkata_Adm_Products.dll": "sha256-x4OrdK\/I7qd67CRgnncGSL5GKELe2r4CoJ6r+CmCNNc="
+      "Kenkata_Adm_Products.dll": "sha256-pCJeGTjwQ+eOyO+cAv5\/0823ojmOMK6Z+KOcdMMV0SI="
     },
     "lazyAssembly": null,
     "pdb": {
-      "Kenkata_Adm_Products.pdb": "sha256-6usPv129kNh38VDemjGs8R50xMeImfCyGYU02d5oTyg="
-=======
-      "Kenkata_Adm_Products.dll": "sha256-pazADjX+LNLaHfWdl9mLrRpkP7082uUxRbZ+jYCHA+Q="
-    },
-    "lazyAssembly": null,
-    "pdb": {
-      "Kenkata_Adm_Products.pdb": "sha256-eBAl+BnvdgkWG0qask\/7lL9ftST1T2EaukECg+3jhmw="
->>>>>>> origin/Ahmed
-=======
-      "Kenkata_Adm_Products.dll": "sha256-BRXpJ7kr7qt\/IhCi\/7LRaQXE9nuPw0oTD7o16Sdzg0k="
-    },
-    "lazyAssembly": null,
-    "pdb": {
-      "Kenkata_Adm_Products.pdb": "sha256-Qb4PRxUG9XhcHldH1SRsa4GywxruPRDgJpsecr2KENs="
->>>>>>> origin/Mats
+      "Kenkata_Adm_Products.pdb": "sha256-kytMMU7rlgzMU1Ahey7WPtnQniPbV0+om52kfcz7AkE="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-5ttRwTa4Rar530elwLdfGDeH9I9NX9MPyDl6zLi9uug=",
