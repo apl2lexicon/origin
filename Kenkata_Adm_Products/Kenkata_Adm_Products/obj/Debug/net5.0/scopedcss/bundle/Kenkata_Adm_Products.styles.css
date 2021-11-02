@@ -460,9 +460,13 @@ a:hover[b-pbrwj2bgeu] {
 }
 /* /Pages/ShopCart.razor.rz.scp.css */
 *[b-bkxwp7unbd] {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    box-sizing: borde r-box;
+}
+
+.row[b-bkxwp7unbd]::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 body[b-bkxwp7unbd] {
@@ -473,7 +477,7 @@ body[b-bkxwp7unbd] {
 
 .shopping-cart[b-bkxwp7unbd] {
     display: grid;
-    grid-template-rows: auto 140px 1660px;
+    grid-template-rows: auto auto auto auto;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -485,16 +489,19 @@ body[b-bkxwp7unbd] {
 }
 
 .items[b-bkxwp7unbd] {
-    height: 100%;
+    height: 140px;
     width: 1140px !important;
+    align-items: center;
 }
 
 .showcase > .items > div[b-bkxwp7unbd] {
     width: 100%;
 }
 
-#theme-color[b-bkxwp7unbd] {
-    color: #20D3C2;
+@media (max-width: 768px) {
+    .showcase > .items[b-bkxwp7unbd] {
+        width: 100%;
+    }
 }
 
 .shoppingcart-text[b-bkxwp7unbd], .first-arrow-right[b-bkxwp7unbd] {
@@ -521,6 +528,11 @@ body[b-bkxwp7unbd] {
     padding-top: 100px;
 }
 
+.shopping-list[b-bkxwp7unbd] {
+    width: 67%;
+    float: left;
+}
+
 .products-header[b-bkxwp7unbd] {
     color: #0E153D;
     font-size: 18px;
@@ -539,10 +551,6 @@ body[b-bkxwp7unbd] {
     background-color: #FFFFFF;
 }
 
-.text[b-bkxwp7unbd] {
-    padding-top: 45px;
-}
-
 .have-code[b-bkxwp7unbd] {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -551,10 +559,11 @@ body[b-bkxwp7unbd] {
 .coupon-code[b-bkxwp7unbd] {
     border: #E3E3E3 dotted;
     border-radius: 6px;
-    width: 445px;
+    /*    width: 445px; 
     margin-top: 2fr;
     margin-bottom: 2fr;
-    padding-top: 1fr;
+    margin-right: 1fr;
+    padding-top: 1fr;*/
     align-content: center;
     justify-content: center;
     text-align: center;
@@ -577,7 +586,7 @@ body[b-bkxwp7unbd] {
 
 .apply-coupon-btn[b-bkxwp7unbd] {
     position: absolute;
-    right: 0;
+    right: 0px;
     background-color: #20D3C2;
     font-size: 16px;
     font-weight: 400;
@@ -599,8 +608,8 @@ body[b-bkxwp7unbd] {
     font-size: 18px;
     font-weight: 500;
     width: 178px;
-    height: 54px;
-    padding: 15px;
+    /*    height: 54px;
+    padding: 15px; */
     border-radius: 27px;
 }
 
@@ -608,6 +617,9 @@ body[b-bkxwp7unbd] {
     color: #FFFFFF;
     font-size: 18px;
     text-align: center;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .shopping-total[b-bkxwp7unbd] {
@@ -618,18 +630,18 @@ body[b-bkxwp7unbd] {
 
 .shopping-total-header[b-bkxwp7unbd] {
     background-color: #0E153D;
-    color: #20D3C2;
-    font-size: 24px;
-    font-weight: 500;
     text-align: center;
     border-radius: 6px 6px 0px 0px;
 }
 
+.shopping-total-header-text[b-bkxwp7unbd] {
+    color: #20D3C2;
+    font-size: 24px;
+    font-weight: 500;
+}
+
 .subtotal[b-bkxwp7unbd], .shipping[b-bkxwp7unbd], .total[b-bkxwp7unbd] {
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    align-items: stretch;
+    padding-top: 10px;
     margin: auto;
 }
 
@@ -637,6 +649,11 @@ body[b-bkxwp7unbd] {
     color: #0E153D;
     font-size: 16px;
     font-weight: 700;
+    padding-left: 15px;
+}
+
+.shipping-header[b-bkxwp7unbd] {
+    margin: auto;
 }
 
 .subtotal-value[b-bkxwp7unbd], .total-value[b-bkxwp7unbd] {
@@ -644,7 +661,11 @@ body[b-bkxwp7unbd] {
     font-size: 16px;
     font-weight: 700;
     position: absolute;
-    right: 30px;
+    right: 25px;
+}
+
+.shipping-header[b-bkxwp7unbd] {
+    align-items: center;
 }
 
 .shipping-data[b-bkxwp7unbd] {
@@ -682,19 +703,135 @@ body[b-bkxwp7unbd] {
 
 .proceed-to-checkout-btn[b-bkxwp7unbd] {
     background-color: #20D3C2;
-    width: 290px;
-    height: 54px;
-    padding: 15px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    margin-right: 30px;
-    border-radius: 27px;
-}
-
-.proceed-to-checkout-btn[b-bkxwp7unbd] {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 500;
+    /*    width: 290px;
+    height: 54px;
+    margin-left: 30px;
+    margin-right: 30px;*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    border-radius: 27px;
+}
+
+@media screen and (min-width: 768px) {
+    .shopping-list > .shopping-total[b-bkxwp7unbd] {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* For mobile phones: */
+[class*="col-"][b-bkxwp7unbd] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1[b-bkxwp7unbd] {
+        width: 8.33%;
+    }
+
+    .col-s-2[b-bkxwp7unbd] {
+        width: 16.66%;
+    }
+
+    .col-s-3[b-bkxwp7unbd] {
+        width: 25%;
+    }
+
+    .col-s-4[b-bkxwp7unbd] {
+        width: 33.33%;
+    }
+
+    .col-s-5[b-bkxwp7unbd] {
+        width: 41.66%;
+    }
+
+    .col-s-6[b-bkxwp7unbd] {
+        width: 50%;
+    }
+
+    .col-s-7[b-bkxwp7unbd] {
+        width: 58.33%;
+    }
+
+    .col-s-8[b-bkxwp7unbd] {
+        width: 66.66%;
+    }
+
+    .col-s-9[b-bkxwp7unbd] {
+        width: 75%;
+    }
+
+    .col-s-10[b-bkxwp7unbd] {
+        width: 83.33%;
+    }
+
+    .col-s-11[b-bkxwp7unbd] {
+        width: 91.66%;
+    }
+
+    .col-s-12[b-bkxwp7unbd] {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    /* For desktop: */
+    .col-1[b-bkxwp7unbd] {
+        width: 8.33%;
+    }
+
+    .col-2[b-bkxwp7unbd] {
+        width: 16.66%;
+    }
+
+    .col-3[b-bkxwp7unbd] {
+        width: 25%;
+    }
+
+    .col-4[b-bkxwp7unbd] {
+        width: 33.33%;
+    }
+
+    .col-5[b-bkxwp7unbd] {
+        width: 41.66%;
+    }
+
+    .col-6[b-bkxwp7unbd] {
+        width: 50%;
+    }
+
+    .col-7[b-bkxwp7unbd] {
+        width: 58.33%;
+    }
+
+    .col-8[b-bkxwp7unbd] {
+        width: 66.66%;
+    }
+
+    .col-9[b-bkxwp7unbd] {
+        width: 75%;
+    }
+
+    .col-10[b-bkxwp7unbd] {
+        width: 83.33%;
+    }
+
+    .col-11[b-bkxwp7unbd] {
+        width: 91.66%;
+    }
+
+    .col-12[b-bkxwp7unbd] {
+        width: 100%;
+    }
 }
 /* /Pages/Subscribe.razor.rz.scp.css */
 
