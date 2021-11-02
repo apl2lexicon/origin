@@ -1,0 +1,53 @@
+﻿@page "/productslides"
+
+<div class="products-slideshow">
+    <div class="items mx-auto">
+        <div class="header d-flex col-12">
+            <span class="youmay">YOU MAY</span>
+            <span class="alsolike ms-2">ALSO LIKE</span>
+        </div>
+
+        <div class="wave d-flex col-12">
+            <img src="images/wave-pattern.png" alt="">
+        </div>
+    </div>
+
+    <div class="slideshow-container col-12 col-s-6 mt-5">
+        <div class="prev-btn">
+            <img src="images/prev-btn.png" alt="">
+        </div>
+
+        <div class="container d-flex">
+            <div class="mySlides col-3 border">
+                <img src="images/Hat.png" alt="">
+            </div>
+
+            <div class="mySlides col-3 border">
+                <img src="images/Dress.png" alt="">
+            </div>
+
+            <div class="mySlides col-3">
+                <img src="images/Dress-2.png" alt="">
+            </div>
+
+            <div class="mySlides col-3">
+                <img src="images/shirt.png" alt="">
+            </div>
+        </div>
+
+        <div class="next-btn">
+            <img src="images/next-btn.png" alt="">
+        </div>
+    </div>
+
+    <div class="current-slide">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+
+
+    @code {
+
+    }

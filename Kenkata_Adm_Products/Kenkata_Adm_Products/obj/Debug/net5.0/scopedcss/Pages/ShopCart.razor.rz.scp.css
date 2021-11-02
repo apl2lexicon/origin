@@ -1,5 +1,5 @@
 *[b-bkxwp7unbd] {
-    box-sizing: borde r-box;
+    box-sizing: border-box;
 }
 
 .row[b-bkxwp7unbd]::after {
@@ -98,11 +98,6 @@ body[b-bkxwp7unbd] {
 .coupon-code[b-bkxwp7unbd] {
     border: #E3E3E3 dotted;
     border-radius: 6px;
-    /*    width: 445px; 
-    margin-top: 2fr;
-    margin-bottom: 2fr;
-    margin-right: 1fr;
-    padding-top: 1fr;*/
     align-content: center;
     justify-content: center;
     text-align: center;
@@ -147,8 +142,6 @@ body[b-bkxwp7unbd] {
     font-size: 18px;
     font-weight: 500;
     width: 178px;
-    /*    height: 54px;
-    padding: 15px; */
     border-radius: 27px;
 }
 
@@ -245,10 +238,6 @@ body[b-bkxwp7unbd] {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 500;
-    /*    width: 290px;
-    height: 54px;
-    margin-left: 30px;
-    margin-right: 30px;*/
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
