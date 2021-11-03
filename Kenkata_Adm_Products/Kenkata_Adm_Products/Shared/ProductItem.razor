@@ -1,28 +1,28 @@
 ﻿<tr>
     <td>
-        <div><strong>Is: @Product.Name</strong></div>
-        <div class="text-muted"><small>ProductId:        @Product.id</small></div>
-        <div class="text-muted"><small>CustomerCategory: @Product.CustomerCategory</small></div>
-        <div class="text-muted"><small>Season:           @Product.Season</small></div>
-        <div class="text-muted"><small>Category          @Product.Cathegory</small></div>
-        <div class="text-muted"><small>Brand:            @Product.Brand</small></div>
-        <div class="text-muted"><small>Color:            @Product.Color</small></div>
-        <div class="text-muted"><small>Size:             @Product.Size</small></div>
-        <div class="text-muted"><small>Image:            @Product.Image</small></div>
-        <div class="text-muted"><small>CreateDate:       @Product.CreateDate</small></div>
+        <div><strong>@product.Name</strong></div>
+        <div class="text-muted"><small>ProductId:        @product.id</small></div>
+        <div class="text-muted"><small>CustomerCategory: @product.CustomerCategory</small></div>
+        <div class="text-muted"><small>Season:           @product.Season</small></div>
+        <div class="text-muted"><small>Category          @product.Cathegory</small></div>
+        <div class="text-muted"><small>Brand:            @product.Brand</small></div>
+        <div class="text-muted"><small>Color:            @product.Color</small></div>
+        <div class="text-muted"><small>Size:             @product.Size</small></div>
+        <div class="text-muted"><small>Image:            @product.Image</small></div>
+        <div class="text-muted"><small>CreateDate:       @product.CreateDate</small></div>
     </td>
     <td>
-        <div><strong>@Product.Price</strong></div>
-        <div class="text-muted"><small>@Product.InStock</small></div>
+        <div><strong>@product.Price</strong></div>
+        <div class="text-muted"><small>@product.InStock</small></div>
     </td>
     <td>
-        <div><strong>@Product.Image</strong></div>
-        <div class="text-muted"><small>@Product.CreateDate</small></div>
+        <div><strong>@product.Image</strong></div>
+        <div class="text-muted"><small>@product.CreateDate</small></div>
     </td>
 </tr>
 
 
 @code {
     [Parameter]
-    public ProductModel Product { get; set; }
+    public ProductModel product { get; set; }
 }
