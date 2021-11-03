@@ -1,17 +1,13 @@
-﻿@page "/productsbycategorycomponent"
+﻿@page "/productsinstockcomponent"
 @inject HttpClient Http
 
-<h3>ProductByCategoryComponent</h3>
-
-
-<p>Category: </p>
-<input type="text" @bind-value="category" />
+<h3>ProductsInStockComponent</h3>
 
 @if (products == null)
 {
-    <p><em>Loading...</em></p> 
+    <p><em>Loading...</em></p>
 }
-else
+else 
 {
     <table class="table">
         <thead>
@@ -44,17 +40,13 @@ else
             }
         </tbody>
     </table>
-}
+} 
 
-
-@code { 
+@code {
     private ProductModel[] products;
-    private string category { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        category = "10";
-        products = await Http.GetFromJsonAsync<ProductModel[]>("GetProductsByCategory/" + category);
-
-    } 
+        products = await Http.GetFromJsonAsync<ProductModel[]>("GetProductsInStock");
+    }
 }
