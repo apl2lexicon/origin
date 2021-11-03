@@ -1,0 +1,19 @@
+
+.subscribe[b-8fq3s1kytp] {
+  height: 313px;
+  background-color: #F6F6F6;
+}
+.items[b-8fq3s1kytp]{
+  height: 100%;
+  max-width: 1140px !important;
+}
+.items>div[b-8fq3s1kytp]{
+  width: 50%;
+  height: 100%;
+}
+.items>.text[b-8fq3s1kytp]{
+  
+}
+.items>.image[b-8fq3s1kytp]{
+  background-color:#CCCCCC;
+}
