@@ -1,8 +1,11 @@
 {
-    "IsEncrypted": false,
+  "IsEncrypted": false,
   "Values": {
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
     "CosmocDB": "AccountEndpoint=https://kenkataproductdb.documents.azure.com:443/;AccountKey=rnOs23WULyJ5xioMaeoJQF2So0yIYShrkrEuips5nf2RIIE6in0NCGwtR3JBOrUycHCKflJ15SIg3CmEZWE96A==;"
+  },
+  "Host": {
+    "CORS": "*"
   }
 }
