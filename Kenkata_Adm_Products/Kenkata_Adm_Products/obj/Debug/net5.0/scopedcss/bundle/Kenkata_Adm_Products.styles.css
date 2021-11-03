@@ -247,6 +247,7 @@ a:hover[b-pbrwj2bgeu] {
 }
 /* /Pages/ProductSlides.razor.rz.scp.css */
 *[b-32l2o97oox] {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -254,6 +255,14 @@ body[b-32l2o97oox] {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #57647C;
+}
+
+.products-slideshow[b-32l2o97oox] {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
 }
 
 .items[b-32l2o97oox] {
@@ -355,9 +364,248 @@ a:hover[b-32l2o97oox] {
     margin-top: 2rem;
 }
 
-.mySlides[b-32l2o97oox] {
-    margin: auto;
+.gallery[b-32l2o97oox] {
+    background: #FFFFFF;
+}
+
+.gallery-cell[b-32l2o97oox] {
+    margin-right: 5px;
+    margin-left: 5px;
     background-color: #F6F6F6;
+    border-radius: 6px;
+    counter-increment: mySlides;
+}
+
+.gallery-cell-selected[b-32l2o97oox] {
+    position: relative;
+    background-color: #0E153D;
+    border-radius: 6px;
+}
+
+#selected-gallery-cell .quick-guide[b-32l2o97oox] {
+    background-color: #FFFFFF;
+    border-radius: 23px;
+    height: 140px;
+    width: 31px;
+    margin-right: 10px;
+    margin-top: 10px;
+    justify-content: flex-end;
+    align-content: flex-end;
+    text-align: end;
+    position: absolute;
+    right: 0px;
+}
+
+#selected-gallery-cell .red-dot[b-32l2o97oox] {
+    cursor: pointer;
+    margin: 5px 8px;
+    display: inline-block;
+    position: relative;
+}
+
+#selected-gallery-cell .heart[b-32l2o97oox] {
+    cursor: pointer;
+    margin: 0 8px;
+    display: inline-block;
+    position: relative;
+}
+
+    #selected-gallery-cell .heart .tooltiptext[b-32l2o97oox] {
+        visibility: hidden;
+        width: 120px;
+        background-color: #20D3C2;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        right: 105%;
+    }
+
+    #selected-gallery-cell .heart:hover .tooltiptext[b-32l2o97oox] {
+        visibility: visible;
+        border-bottom: 1px dotted #20D3C2;
+    }
+
+#selected-gallery-cell .compare[b-32l2o97oox] {
+    cursor: pointer;
+    margin: 0 8px;
+    display: inline-block;
+    position: relative;
+}
+
+    #selected-gallery-cell .compare .tooltiptext[b-32l2o97oox] {
+        visibility: hidden;
+        width: 120px;
+        background-color: #20D3C2;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        right: 105%;
+    }
+
+    #selected-gallery-cell .compare:hover .tooltiptext[b-32l2o97oox] {
+        visibility: visible;
+        border-bottom: 1px dotted #20D3C2;
+    }
+
+#selected-gallery-cell .search[b-32l2o97oox] {
+    cursor: pointer;
+    margin: 0 8px;
+    display: inline-block;
+    position: relative;
+}
+
+    #selected-gallery-cell .search .tooltiptext[b-32l2o97oox] {
+        visibility: hidden;
+        width: 120px;
+        background-color: #20D3C2;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        right: 105%;
+    }
+
+    #selected-gallery-cell .search:hover .tooltiptext[b-32l2o97oox] {
+        visibility: visible;
+        border-bottom: 1px dotted #20D3C2;
+    }
+
+#selected-gallery-cell .cart[b-32l2o97oox] {
+    cursor: pointer;
+    margin: 0 8px;
+    display: inline-block;
+    position: relative;
+}
+
+    #selected-gallery-cell .cart .tooltiptext[b-32l2o97oox] {
+        visibility: hidden;
+        width: 120px;
+        background-color: #20D3C2;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        right: 105%;
+    }
+
+    #selected-gallery-cell .cart:hover .tooltiptext[b-32l2o97oox] {
+        visibility: visible;
+        border-bottom: 1px dotted #20D3C2;
+    }
+
+#selected-gallery-cell .product-data[b-32l2o97oox] {
+    position: absolute;
+    bottom: 25px;
+    align-content: stretch;
+}
+
+#selected-gallery-cell .description[b-32l2o97oox] {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+#selected-gallery-cell .category[b-32l2o97oox] {
+    padding-left: 10px;
+}
+
+#selected-gallery-cell .category-text[b-32l2o97oox] {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    border: #FFFFFF 1px solid;
+    padding: 2px 10px 2px 10px;
+    display: inline-block;
+}
+
+#selected-gallery-cell .old-price[b-32l2o97oox] {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 10px;
+    text-decoration: line-through;
+}
+
+#selected-gallery-cell .new-price[b-32l2o97oox] {
+    color: #20D3C2;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+#selected-gallery-cell .price-and-rating[b-32l2o97oox] {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#selected-gallery-cell .new-price[b-32l2o97oox] {
+    position: absolute;
+}
+
+#selected-gallery-cell .rating[b-32l2o97oox] {
+    position: absolute;
+    right: 10px;
+}
+
+.gallery-cell.is-selected[b-32l2o97oox] {
+    background: #ED2;
+}
+
+.subtitle[b-32l2o97oox] {
+    background-color: #0E153D;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0px 0px 6px 6px;
+}
+
+.subtitle-text[b-32l2o97oox] {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.new-label[b-32l2o97oox] {
+    background-color: #20D3C2;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.discount-label[b-32l2o97oox] {
+    background-color: #64CB83;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 @media only screen and (min-width: 600px) {
