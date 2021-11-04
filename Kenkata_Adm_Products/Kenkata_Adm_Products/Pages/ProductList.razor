@@ -28,7 +28,7 @@
 
     protected override void OnInitialized()
     {
-        var timer = new Timer(new TimerCallback(_ => InvokeAsync(() => StateHasChanged())), null, 2000, 2000);
+        var timer = new Timer(new TimerCallback(_ => InvokeAsync(() => StateHasChanged())), null, 1000, 3000);
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
