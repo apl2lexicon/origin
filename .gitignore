@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Kenkata_Adm_Products/Kenkata_Adm_Products/obj/Debug/net5.0/RazorDeclaration/Pages
+/Kenkata_Adm_Products/Kenkata_Adm_Products/obj/Debug/net5.0/RazorDeclaration/Shared
+/Kenkata_Adm_Products/Kenkata_Adm_Products/obj/Debug/net5.0/RazorDeclaration/App.razor.g.cs
+/Kenkata_Adm_Products/Kenkata_Adm_Products/obj/Debug/net5.0/RazorDeclaration/_Imports.razor.g.cs
+/Kenkata_Adm_Products/Kenkata_Adm_Products/obj/Debug/net5.0/Kenkata_Adm_Products.AssemblyInfo.cs
+/Kenkata_Adm_Products/Kenkata_Adm_Products/obj/Debug/net5.0/Kenkata_Adm_Products.AssemblyInfoInputs.cache
+/Kenkata_Adm_Products/Kenkata_Adm_Products/obj/Debug/net5.0/Kenkata_Adm_Products.GeneratedMSBuildEditorConfig.editorconfig
+/Kenkata_Adm_Products/Kenkata_Adm_Products/obj/Debug/net5.0/Kenkata_Adm_Products.RazorComponent.input.cache
+/Kenkata_Adm_Products/Kenkata_Adm_Products/obj/Debug/net5.0/Kenkata_Adm_Products.RazorComponent.output.cache
+/Kenkata_Adm_Products/Kenkata_Adm_Products/obj/Debug/net5.0/build-gz
