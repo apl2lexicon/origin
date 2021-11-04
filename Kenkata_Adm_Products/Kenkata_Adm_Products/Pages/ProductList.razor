@@ -1,29 +1,12 @@
-﻿    <div class="inputfields container">
+﻿    <div id="ProdListPage" class="inputfields container">
         @if (products == null)
         {
-            <div>No products found.</div>
+        <div>Loading...</div>
         }
         else
         {
             <table id="product-list" class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">id</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">CustomerCategory</th>
-                        <th scope="col">Season</th>
-                        <th scope="col">Category</th>
-                        <th scope="col">Brand</th>
-                        <th scope="col">Color</th>
-                        <th scope="col">Size</th>
-                        <th scope="col">InStock</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Image</th>
-                        <th scope="col">CreateDate</th>
-                        <th scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody>
+                 <tbody>
                     @foreach (var product in products)
                     {
                         <ProductItem product="@product" />
@@ -31,8 +14,7 @@
                 </tbody>
             </table>
         }
-        <br />
-        <br />
+
     </div>
 
 
@@ -46,7 +28,7 @@
 
     protected override void OnInitialized()
     {
-        var timer = new Timer(new TimerCallback(_ => InvokeAsync(() => StateHasChanged())), null, 3000, 3000);
+        var timer = new Timer(new TimerCallback(_ => InvokeAsync(() => StateHasChanged())), null, 2000, 2000);
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
