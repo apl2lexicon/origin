@@ -13,32 +13,12 @@
     </div>
 
     <div class="slideshow-container col-12 col-s-6 mt-5">
-        <div class="prev-btn">
+        <div class="prev-btn" onclick="plusSlides(-1)">
             <img src="images/prev-btn.png" alt="">
         </div>
 
-        <div class="gallery container d-flex">
-            <div class="gallery-cell col-3">
-                <div class="new-label mt-2 ms-2">
-                    <p>New</p>
-                </div>
-                <img src="images/Hat.png" alt="">
-                <div class="subtitle">
-                    <span class="subtitle-text">Circle pattern girls shirt</span>
-                </div>
-            </div>
-
-            <div class="gallery-cell col-3">
-                <div class="new-label mt-2 ms-2">
-                    <p>New</p>
-                </div>
-                <img src="images/Dress.png" alt="">
-                <div class="subtitle">
-                    <span class="subtitle-text">Circle pattern girls shirt</span>
-                </div>
-            </div>
-
-            <div id="selected-gallery-cell" class="gallery-cell-selected col-3">
+        <div class="gallery container col-12 col-s-6 d-flex">
+            <div id="selected-gallery-cell" class="gallery-cell-selected col-3" onclick="replace('selected-gallery-cell','gallery-cell')">
                 <div>
                     <div class="quick-guide">
                         <div class="red-dot">
@@ -100,7 +80,27 @@
                 </div>
             </div>
 
-            <div class="gallery-cell col-3">
+            <div id="gallery-cell" class="gallery-cell col-3" onclick="replace('gallery-cell', 'selected-gallery-cell')">
+                <div class="new-label mt-2 ms-2">
+                    <p>New</p>
+                </div>
+                <img src="images/Hat.png" alt="">
+                <div class="subtitle">
+                    <span class="subtitle-text">Circle pattern girls shirt</span>
+                </div>
+            </div>
+
+            <div id="gallery-cell" class="gallery-cell col-3" onclick="replace('gallery-cell', 'selected-gallery-cell')">
+                <div class="new-label mt-2 ms-2">
+                    <p>New</p>
+                </div>
+                <img src="images/Dress.png" alt="">
+                <div class="subtitle">
+                    <span class="subtitle-text">Circle pattern girls shirt</span>
+                </div>
+            </div>
+
+            <div id="gallery-cell" class="gallery-cell col-3" onclick="replace('gallery-cell', 'selected-gallery-cell')">
                 <div class="discount-label mt-2 ms-2">
                     <p>-20%</p>
                 </div>
@@ -110,8 +110,7 @@
                 </div>
             </div>
 
-            <!--
-            <div class="gallery-cell col-3">
+            <div id="gallery-cell" class="gallery-cell col-3" onclick="replace('gallery-cell', 'selected-gallery-cell')">
                 <div class="discount-label mt-2 ms-2">
                     <p>-20%</p>
                 </div>
@@ -120,11 +119,9 @@
                     <span class="subtitle-text">Circle pattern girls shirt</span>
                 </div>
             </div>
-
-            -->
         </div>
 
-        <div class="next-btn">
+        <div class="next-btn" onclick="plusSlides(1)">
             <img src="images/next-btn.png" alt="">
         </div>
     </div>
