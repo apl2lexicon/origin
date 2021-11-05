@@ -96,6 +96,7 @@ using System.Threading;
 #line default
 #line hidden
 #nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/brands")]
     public partial class Brands : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

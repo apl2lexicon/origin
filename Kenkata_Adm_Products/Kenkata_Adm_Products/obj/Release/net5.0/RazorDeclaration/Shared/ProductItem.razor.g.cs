@@ -104,7 +104,7 @@ using System.Threading;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 25 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Shared\ProductItem.razor"
+#line 38 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Shared\ProductItem.razor"
        
     [Parameter]
     public ProductModel product { get; set; }
