@@ -68,21 +68,21 @@ a, .btn-link {
     margin-top: 16px;
 }
 
-#ListDelProdPage .header {
+#ListProdPage .header {
     margin-top: 40px;
     margin-bottom: 50px;
     text-align: center;
 }
 
-#ListDelProdPage .inputfields {
+#ProdListPage .inputfields {
     width: 400px;
 }
 
-#ListDelProdPage .inputs {
+#ProdListPage .inputs {
     width: 400px;
     margin-top: 16px;
 }
 
-#ListDelProdPage .input_btns {
+#ProdListPage .input_btns {
     margin-top: 16px;
 }
