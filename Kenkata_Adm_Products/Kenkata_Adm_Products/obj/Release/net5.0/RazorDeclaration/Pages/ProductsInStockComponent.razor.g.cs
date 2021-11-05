@@ -13,84 +13,84 @@ namespace Kenkata_Adm_Products.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 1 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 2 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 3 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 4 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 5 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 6 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 7 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 8 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 9 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Kenkata_Adm_Products;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 10 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Kenkata_Adm_Products.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 11 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Kenkata_Adm_Products.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 12 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using System.Threading;
 
 #line default
@@ -105,7 +105,7 @@ using System.Threading;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 45 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ProductsInStockComponent.razor"
+#line 45 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ProductsInStockComponent.razor"
        
     private ProductModel[] products;
 
