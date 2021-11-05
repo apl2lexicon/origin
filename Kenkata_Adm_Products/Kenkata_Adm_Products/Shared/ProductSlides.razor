@@ -1,0 +1,139 @@
+﻿@page "/productslides"
+
+<div class="products-slideshow mt-5">
+    <div class="items mx-auto">
+        <div class="header d-flex col-12">
+            <span class="youmay">YOU MAY</span>
+            <span class="alsolike ms-2">ALSO LIKE</span>
+        </div>
+
+        <div class="wave d-flex col-12">
+            <img src="images/wave-pattern.png" alt="">
+        </div>
+    </div>
+
+    <div class="slideshow-container col-12 col-s-6 mt-5">
+        <div class="prev-btn" onclick="plusSlides(-1)">
+            <img src="images/prev-btn.png" alt="">
+        </div>
+
+        <div class="gallery container col-12 col-s-6 d-flex">
+            <div id="selected-gallery-cell" class="gallery-cell-selected col-3" onclick="replace('selected-gallery-cell','gallery-cell')">
+                <div>
+                    <div class="quick-guide">
+                        <div class="red-dot">
+                            <img src="images/Red-dot.png" alt="">
+                        </div>
+
+                        <div class="heart">
+                            <img src="images/Heart icon.png" alt="">
+                            <span class="tooltiptext">Like</span>
+                        </div>
+
+                        <div class="compare">
+                            <img src="images/Compare icon.png" alt="">
+                            <span class="tooltiptext">Compare</span>
+                        </div>
+
+                        <div class="search">
+                            <img src="images/search icon.png" alt="">
+                            <span class="tooltiptext">Search</span>
+                        </div>
+
+                        <div class="cart">
+                            <img src="images/Cart icon.png" alt="">
+                            <span class="tooltiptext">Add to cart</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="product-data container">
+                        <div class="description">
+                            <p>New Look men's coat</p>
+                        </div>
+
+                        <div class="category">
+                            <div class="category-text">
+                                <p>Fashion</p>
+                            </div>
+                        </div>
+
+                        <div class="old-price">
+                            <p>$220.00</p>
+                        </div>
+
+                        <div class="price-and-rating d-flex">
+                            <div class="new-price">
+                                <p>$190.00</p>
+                            </div>
+
+                            <div class="rating">
+                                <img src="images/star-selected.png" alt="">
+                                <img src="images/star-selected.png" alt="">
+                                <img src="images/star-selected.png" alt="">
+                                <img src="images/star-selected.png" alt="">
+                                <img src="images/star-nonselected.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gallery-cell" class="gallery-cell col-3" onclick="replace('gallery-cell', 'selected-gallery-cell')">
+                <div class="new-label mt-2 ms-2">
+                    <p>New</p>
+                </div>
+                <img src="images/Hat.png" alt="">
+                <div class="subtitle">
+                    <span class="subtitle-text">Circle pattern girls shirt</span>
+                </div>
+            </div>
+
+            <div id="gallery-cell" class="gallery-cell col-3" onclick="replace('gallery-cell', 'selected-gallery-cell')">
+                <div class="new-label mt-2 ms-2">
+                    <p>New</p>
+                </div>
+                <img src="images/Dress.png" alt="">
+                <div class="subtitle">
+                    <span class="subtitle-text">Circle pattern girls shirt</span>
+                </div>
+            </div>
+
+            <div id="gallery-cell" class="gallery-cell col-3" onclick="replace('gallery-cell', 'selected-gallery-cell')">
+                <div class="discount-label mt-2 ms-2">
+                    <p>-20%</p>
+                </div>
+                <img src="images/Dress-2.png" alt="">
+                <div class="subtitle">
+                    <span class="subtitle-text">Circle pattern girls shirt</span>
+                </div>
+            </div>
+
+            <div id="gallery-cell" class="gallery-cell col-3" onclick="replace('gallery-cell', 'selected-gallery-cell')">
+                <div class="discount-label mt-2 ms-2">
+                    <p>-20%</p>
+                </div>
+                <img src="images/shirt.png" alt="">
+                <div class="subtitle">
+                    <span class="subtitle-text">Circle pattern girls shirt</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="next-btn" onclick="plusSlides(1)">
+            <img src="images/next-btn.png" alt="">
+        </div>
+    </div>
+
+    <div class="current-slide">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+
+
+@code {
+
+}
