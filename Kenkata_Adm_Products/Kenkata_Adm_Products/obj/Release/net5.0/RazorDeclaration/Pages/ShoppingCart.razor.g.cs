@@ -96,8 +96,8 @@ using System.Threading;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/shopcart")]
-    public partial class ShopCart : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/shoppingcart")]
+    public partial class ShoppingCart : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -105,17 +105,13 @@ using System.Threading;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 178 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ShopCart.razor"
+#line 166 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ShoppingCart.razor"
        
     private int currentCount = 1;
-    private double subtotal = 0.00;
-    public ProductModel[] products;
 
     private void IncrementCount()
     {
         currentCount++;
-
-        SubTotalSum();
     }
 
     private void DecrementCount()
@@ -123,23 +119,7 @@ using System.Threading;
         if (currentCount > 0)
         {
             currentCount--;
-
-            SubTotalSum();
         }
-    }
-
-    private double SubTotalSum()
-    {
-        int numOfITems = currentCount;
-        double thePrice = Convert.ToDouble(price);
-        subtotal = numOfITems * thePrice;
-
-        return subtotal;
-    }
-
-    protected override async Task OnInitializedAsync()
-    {
-        products = await Http.GetFromJsonAsync<ProductModel[]>("http://localhost:7071/api/GetAllProducts");
     }
 
 #line default

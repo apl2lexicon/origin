@@ -428,7 +428,6 @@ C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\bin\Debug\net5.0\wwwroot
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\bin\Debug\net5.0\wwwroot\_framework\icudt_EFIGS.dat
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\bin\Debug\net5.0\wwwroot\_framework\icudt_no_CJK.dat
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\bin\Debug\net5.0\wwwroot\_framework\dotnet.5.0.11.js
-C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata_Adm_Products.csproj.AssemblyReference.cache
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata_Adm_Products.GeneratedMSBuildEditorConfig.editorconfig
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata_Adm_Products.AssemblyInfoInputs.cache
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata_Adm_Products.AssemblyInfo.cs
@@ -437,6 +436,7 @@ C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata_Adm_Products.RazorComponent.input.cache
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\RazorDeclaration\Pages\AddProduct.razor.g.cs
+C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\RazorDeclaration\Pages\Cart.razor.g.cs
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
@@ -470,6 +470,7 @@ C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata_Adm_Products.RazorCoreGenerate.cache
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Razor\App.razor.g.cs
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Razor\Pages\AddProduct.razor.g.cs
+C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Razor\Pages\Cart.razor.g.cs
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
@@ -724,3 +725,4 @@ C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata_Adm_Products.dll
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\ref\Kenkata_Adm_Products.dll
 C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata_Adm_Products.pdb
+C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\obj\Debug\net5.0\Kenkata_Adm_Products.csproj.AssemblyReference.cache

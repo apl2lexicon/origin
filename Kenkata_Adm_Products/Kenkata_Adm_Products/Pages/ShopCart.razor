@@ -14,29 +14,48 @@
 
     <div class="shopping row container">
         <div class="shopping-list col-8 col-s-12">
-            <table class="shopping-table">
-                <thead class="products-header">
-                    <tr>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Subtotal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <input type="image" img src="images/Close icon.png" class="img-fluid" alt="">
-                        </td>
-                        <td></td>
-                        <td>
-                            <input type="button" value="+" class="plusbutton">
-                            <input type="text" id="numOfItems" class="numOfItems" maxlength="3" size="3">
-                            <input type="button" value="-" class="minusbutton">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            @if (products == null)
+            {
+                <em>Loading...</em>
+            }
+            else
+            {
+                <table class="shopping-table">
+                    <thead class="products-header">
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                        </tr>
+                        <hr />
+                    </thead>
+                    <tbody>
+                        @for (int i = 0; i < products.Length; i++)
+                        {
+                            var local = i;
+
+                            <tr>
+                                <td>
+                                    <div class="align-baseline">
+                                        <input type="image" img src="images/Close icon.png" class="img-fluid" alt="">
+                                        @products[i].Name
+                                    </div>
+                                </td>
+                                <td>@products[i].Price</td>
+                                <td>
+                                    <input type="button" value="+" class="plusbutton" @onclick="@(() => IncrementCount(local))">
+                                    <input type="text" id="numOfItems" class="numOfItems" maxlength="3" size="3" value=@currentCount @onchange="@(() => SubTotalSum(local))">
+                                    <input type="button" value="-" class="minusbutton" @onclick="@(() => DecrementCount(local))">
+                                </td>
+
+                                <td>@subtotal</td>
+                            </tr>
+                            <hr />
+                        }
+                    </tbody>
+                </table>
+            }
 
             <div class="row mt-5">
                 <div class="col-8 col-s-12">
@@ -164,5 +183,38 @@
 
 
 @code {
+    private int currentCount = 1;
+    private int selectedRow;
+    private double subtotal = 0.00;
+    public ProductModel[] products;
 
+    private void IncrementCount(int i)
+    {
+        currentCount++;
+    }
+
+    private void DecrementCount(int i)
+    {
+        if (currentCount > 0)
+        {
+            currentCount--;
+        }
+    }
+
+    //private async Task RowSelect(int rowIndex)
+    //{
+    //    await ListRowSelected.invokeAsync(rowIndex);
+    //}
+
+    private void SubTotalSum(int i)
+    {
+        int numOfITems = currentCount;
+        double thePrice = Convert.ToDouble(products[i].Price);
+        subtotal = numOfITems * thePrice;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await Http.GetFromJsonAsync<ProductModel[]>("http://localhost:7071/api/GetAllProducts");
+    }
 }

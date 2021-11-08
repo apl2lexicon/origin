@@ -96,55 +96,14 @@ using System.Threading;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/shopcart")]
-    public partial class ShopCart : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/cart")]
+    public partial class Cart : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 178 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ShopCart.razor"
-       
-    private int currentCount = 1;
-    private double subtotal = 0.00;
-    public ProductModel[] products;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-
-        SubTotalSum();
-    }
-
-    private void DecrementCount()
-    {
-        if (currentCount > 0)
-        {
-            currentCount--;
-
-            SubTotalSum();
-        }
-    }
-
-    private double SubTotalSum()
-    {
-        int numOfITems = currentCount;
-        double thePrice = Convert.ToDouble(price);
-        subtotal = numOfITems * thePrice;
-
-        return subtotal;
-    }
-
-    protected override async Task OnInitializedAsync()
-    {
-        products = await Http.GetFromJsonAsync<ProductModel[]>("http://localhost:7071/api/GetAllProducts");
-    }
-
-#line default
-#line hidden
-#nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JS { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
