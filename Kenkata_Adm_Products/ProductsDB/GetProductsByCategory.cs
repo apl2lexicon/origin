@@ -16,13 +16,13 @@ namespace ProductsDB
     {
         [FunctionName("GetProductsByCategory")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "GetProductsByCategory/{Cathegory}")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "GetProductsByCategory/{Category}")] HttpRequest req,
             [CosmosDB(
                 databaseName: "ProductDB",
                 collectionName: "Products",
                 CreateIfNotExists = true,
                 ConnectionStringSetting = "CosmocDB",
-                SqlQuery = "SELECT * FROM products p WHERE p.Cathegory = {Cathegory}"
+                SqlQuery = "SELECT * FROM products p WHERE p.Category = {Category}"
             )] IEnumerable<ProductModel> products,
             ILogger log)
         {
