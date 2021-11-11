@@ -104,6 +104,126 @@ using System.Threading;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 191 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ShopCart.razor"
+           
+        private int selectedRow;
+        private double subtotal = 0.00;
+        private double cartsubtotal = 0.00;
+        private string strCartSubTotal = "0.00";
+        private ProductModel[] products;
+        private int currentCount = 1;
+
+        private double shippingCost = 0.00;
+        private string strShippingCost = "0.00";
+        private double totalCost = 0.00;
+        private string strTotalCost = "0.00";
+
+        private string shipFlatrate { get; set; }
+        private string shipFree { get; set; }
+        private string shipLocalPickup { get; set; }
+
+        //public class Item
+        //{
+        //    public static ProductModel[] ProductItem { get; set; }
+        //    public static int Quantity { get; set; }
+        //}
+
+
+        private void IncrementCount(int i)
+        {
+            currentCount++;
+
+            SubTotalSum(i);
+        }
+
+        private void DecrementCount(int i)
+        {
+            if (currentCount > 0)
+            {
+                currentCount--;
+            }
+
+            SubTotalSum(i);
+        }
+
+        //private async Task RowSelect(int rowIndex)
+        //{
+        //    await ListRowSelected.invokeAsync(rowIndex);
+        //}
+
+        private void SubTotalSum(int i)
+        {
+            double thePrice = Convert.ToDouble(products[i].Price);
+            subtotal = currentCount * thePrice;
+
+            CartSubTotalsum();
+        }
+
+        private void CartSubTotalsum()
+        {
+            cartsubtotal = 0.00;
+
+            for (int i = 0; i < products.Length; i++)
+            {
+                cartsubtotal = cartsubtotal + (Convert.ToDouble(products[i].Price) * currentCount);
+            }
+
+            strCartSubTotal = cartsubtotal.ToString("$ # ###.##");
+
+            if (strCartSubTotal.Trim().Equals(""))
+            {
+                strCartSubTotal = "$ 0.00";
+            }
+
+            TheTotalCost();
+        }
+
+        protected override async Task OnInitializedAsync()
+        {
+            products = await Http.GetFromJsonAsync<ProductModel[]>("http://localhost:7071/api/GetAllProducts");
+
+            CartSubTotalsum();
+        }
+
+        private void FlatrateChanged(ChangeEventArgs args)
+        {
+            shippingCost = 20.00;
+
+            TheTotalCost();
+        }
+
+        private void FreeChanged(ChangeEventArgs args)
+        {
+            shippingCost = 0.00;
+
+            TheTotalCost();
+        }
+
+        private void LocalPickupChanged(ChangeEventArgs args)
+        {
+            shippingCost = 25.00;
+
+            TheTotalCost();
+        }
+
+        private void TheTotalCost()
+        {
+            totalCost = cartsubtotal + shippingCost;
+
+            strTotalCost = string.Format(totalCost.ToString("$ # ###.##"));
+
+            if (strTotalCost.Trim().Equals(""))
+            {
+                strTotalCost = "$ 0.00";
+            }
+        }
+
+    
+
+#line default
+#line hidden
+#nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JS { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }

@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Kenkata_Adm_Products.Shared
+namespace Kenkata_Adm_Products.Pages
 {
     #line hidden
     using System;
@@ -96,75 +96,14 @@ using System.Threading;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/productslides")]
-    public partial class ProductSlides : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/checkout")]
+    public partial class Checkout : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 128 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Shared\ProductSlides.razor"
-       
-    private ProductModel[] products;
-
-    protected override async Task OnInitializedAsync()
-    {
-        products = await Http.GetFromJsonAsync<ProductModel[]>("http://localhost:7071/Api/GetAllProducts");
-    }
-
-    //private static void replace(object hide, object show)
-    //{
-    //    document.getElementById(hide).style.display = "none";
-    //    document.getElementById(show).style.display = "block";
-    //}
-
-    //private int slideIndex = 1;
-
-    //private void plusSlides(int n)
-    //{
-    //    showSlides(slideIndex += n);
-    //}
-
-    //private void currentSlide(int n)
-    //{
-    //    showSlides(slideIndex = n);
-    //}
-
-    //private void showSlides(int n)
-    //{
-    //    int i;
-    //    var slides = document.getElementsByClassName("gallery-cell");
-    //    var dots = document.getElementsByClassName("dot");
-
-    //    if (n > slides.length)
-    //    {
-    //        slideIndex = 1;
-    //    }
-
-    //    if (n < 1)
-    //    {
-    //        slideIndex = slides.length;
-    //    }
-
-    //    for (i = 0; i < slides.length; i++)
-    //    {
-    //        slides[i].style.display = "none";
-    //    }
-
-    //    for (i = 0; i < dots.length; i++)
-    //    {
-    //        dots[i].className = dots[i].className.replace(" active", "");
-    //    }
-
-    //    slides[slideIndex - 1].style.display = "block";
-    //    dots[slideIndex - 1].className += " active";
-    //}
-
-#line default
-#line hidden
-#nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JS { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }

@@ -23,12 +23,13 @@ body {
 }
 
 .showcase {
-    grid-area: 1 / 1 / 2 / 2;
     background-color: #0E153D;
+    height: 140px;
 }
 
 .items {
-    height: 140px;
+    height: 100%;
+/*    height: 140px;*/    
     width: 1140px !important;
     align-items: center;
 }
@@ -70,6 +71,10 @@ body {
 .shopping-list {
     width: 67%;
     float: left;
+}
+
+.shopping-table {
+    width: 100%;
 }
 
 .products-header {

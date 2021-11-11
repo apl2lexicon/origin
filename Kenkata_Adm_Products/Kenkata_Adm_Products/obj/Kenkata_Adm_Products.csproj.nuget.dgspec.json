@@ -10,14 +10,23 @@
         "projectUniqueName": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\Kenkata_Adm_Products\\Kenkata_Adm_Products.csproj",
         "projectName": "Kenkata_Adm_Products",
         "projectPath": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\Kenkata_Adm_Products\\Kenkata_Adm_Products.csproj",
+<<<<<<< HEAD
         "packagesPath": "C:\\Users\\Ibraheem\\.nuget\\packages\\",
+=======
+        "packagesPath": "C:\\Users\\mats-\\.nuget\\packages\\",
+>>>>>>> origin/Mats
         "outputPath": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\Kenkata_Adm_Products\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\Ibraheem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\mats-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> origin/Mats
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
