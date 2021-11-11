@@ -11,6 +11,7 @@
         "projectName": "Kenkata_Adm_Products",
         "projectPath": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\Kenkata_Adm_Products\\Kenkata_Adm_Products.csproj",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "packagesPath": "C:\\Users\\Ibraheem\\.nuget\\packages\\",
 =======
         "packagesPath": "C:\\Users\\mats-\\.nuget\\packages\\",
@@ -28,6 +29,19 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
 >>>>>>> origin/Mats
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+        "packagesPath": "C:\\Users\\Ibraheem\\.nuget\\packages\\",
+        "outputPath": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\Kenkata_Adm_Products\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ibraheem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> origin/Ahmed
         ],
         "originalTargetFrameworks": [
           "net5.0"

@@ -46,6 +46,7 @@
       "System.Security.Permissions.dll": "sha256-dO87Z5YKm1af7ZrEVxV3adv+QzsPT6E8UhZ8Ika\/7XE=",
       "System.Windows.Extensions.dll": "sha256-q76BRvo\/Y47p9aquhRgtct54B8nwoGMR7xTrTl88s7A=",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.CSharp.dll": "sha256-J3xEnfK9Stuxsk3ysfAkwm7tlSZzs8rytHhodu+3aA0=",
       "Microsoft.VisualBasic.Core.dll": "sha256-6gJT+FVMmaF5o4CyPAnHcWjWVtFMSdJke\/+1seKS1Y0=",
       "Microsoft.VisualBasic.dll": "sha256-BCLkgDB15ehV\/3J8Qz1SJ2d4wMMH1Avc\/MlGr7G45I8=",
@@ -214,6 +215,8 @@
 <<<<<<< HEAD
       "Kenkata_Adm_Products.dll": "sha256-1QgrMHpT0LlOfMytN4ESKbdACpPw4Xm06ZyDJAzbMls="
 =======
+=======
+>>>>>>> origin/Ahmed
       "Microsoft.CSharp.dll": "sha256-7lPdvYmKNuvJJ5P\/jsxQikc2dmeGUVI9WaasePSuNFQ=",
       "Microsoft.VisualBasic.Core.dll": "sha256-J7gHIxZfOy7emzL13bxVrkyZR8OWck+j2g0pzTZ9aec=",
       "Microsoft.VisualBasic.dll": "sha256-q4xhyzut7y4LjPL5inXgxslAK1zMYmQKSv0S49IbTSU=",
@@ -379,6 +382,7 @@
       "mscorlib.dll": "sha256-+dB3Q0YubUPF1oZDMVZn6ZCiRkzRomtLoq51T5FocJk=",
       "netstandard.dll": "sha256-dOHF0zANIyA4WS496iWrAkTuEFWSWrXJjZj2pQQHrMA=",
       "System.Private.CoreLib.dll": "sha256-C96+zv+mWW0XzMG520oRgAG1lHVY8xzWGc6oc6rFjws=",
+<<<<<<< HEAD
       "Kenkata_Adm_Products.dll": "sha256-Hjncn2jxWQ03GQgYmrbPXpoJ2gOw\/kxQSg5tpRyL1BQ="
 >>>>>>> Tommy
     },
@@ -392,6 +396,13 @@
     "pdb": {
       "Kenkata_Adm_Products.pdb": "sha256-JPcW61oVhNXr1w2GKA2PeZqb6CkfnbJ\/43xIWac6uQk="
 >>>>>>> origin/Mats
+=======
+      "Kenkata_Adm_Products.dll": "sha256-+ha1mcUWuwyIJ0sKpQX4O44F8B+qVDfLg43utbDCFss="
+    },
+    "lazyAssembly": null,
+    "pdb": {
+      "Kenkata_Adm_Products.pdb": "sha256-M7WpuqPOAMiUz9KBogSKwv0DstB7hUG6+Xs0iMaEuUg="
+>>>>>>> origin/Ahmed
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-ir9YCVnnk7popgsYUkvitfGA4WpkP1ydPh\/ENHnxGys=",

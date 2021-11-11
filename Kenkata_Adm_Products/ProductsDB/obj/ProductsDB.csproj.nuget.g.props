@@ -6,14 +6,19 @@
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Ibraheem\.nuget\packages\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
 =======
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\mats-\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
 >>>>>>> origin/Mats
+=======
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Ibraheem\.nuget\packages\;C:\Program Files (x86)\Microsoft\Xamarin\NuGet\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
+>>>>>>> origin/Ahmed
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.11.1</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <SourceRoot Include="C:\Users\Ibraheem\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\" />
@@ -21,6 +26,11 @@
     <SourceRoot Include="C:\Users\mats-\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
 >>>>>>> origin/Mats
+=======
+    <SourceRoot Include="C:\Users\Ibraheem\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\" />
+    <SourceRoot Include="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\" />
+>>>>>>> origin/Ahmed
   </ItemGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -40,11 +50,16 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <PkgMicrosoft_Azure_WebJobs_Script_ExtensionsMetadataGenerator Condition=" '$(PkgMicrosoft_Azure_WebJobs_Script_ExtensionsMetadataGenerator)' == '' ">C:\Users\Ibraheem\.nuget\packages\microsoft.azure.webjobs.script.extensionsmetadatagenerator\1.1.8</PkgMicrosoft_Azure_WebJobs_Script_ExtensionsMetadataGenerator>
     <PkgMicrosoft_NET_Sdk_Functions Condition=" '$(PkgMicrosoft_NET_Sdk_Functions)' == '' ">C:\Users\Ibraheem\.nuget\packages\microsoft.net.sdk.functions\3.0.9</PkgMicrosoft_NET_Sdk_Functions>
 =======
     <PkgMicrosoft_Azure_WebJobs_Script_ExtensionsMetadataGenerator Condition=" '$(PkgMicrosoft_Azure_WebJobs_Script_ExtensionsMetadataGenerator)' == '' ">C:\Users\mats-\.nuget\packages\microsoft.azure.webjobs.script.extensionsmetadatagenerator\1.1.8</PkgMicrosoft_Azure_WebJobs_Script_ExtensionsMetadataGenerator>
     <PkgMicrosoft_NET_Sdk_Functions Condition=" '$(PkgMicrosoft_NET_Sdk_Functions)' == '' ">C:\Users\mats-\.nuget\packages\microsoft.net.sdk.functions\3.0.9</PkgMicrosoft_NET_Sdk_Functions>
 >>>>>>> origin/Mats
+=======
+    <PkgMicrosoft_Azure_WebJobs_Script_ExtensionsMetadataGenerator Condition=" '$(PkgMicrosoft_Azure_WebJobs_Script_ExtensionsMetadataGenerator)' == '' ">C:\Users\Ibraheem\.nuget\packages\microsoft.azure.webjobs.script.extensionsmetadatagenerator\1.1.8</PkgMicrosoft_Azure_WebJobs_Script_ExtensionsMetadataGenerator>
+    <PkgMicrosoft_NET_Sdk_Functions Condition=" '$(PkgMicrosoft_NET_Sdk_Functions)' == '' ">C:\Users\Ibraheem\.nuget\packages\microsoft.net.sdk.functions\3.0.9</PkgMicrosoft_NET_Sdk_Functions>
+>>>>>>> origin/Ahmed
   </PropertyGroup>
 </Project>
