@@ -1,0 +1,190 @@
+:root {
+    --main-color: #20D3C2;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: #0E153D
+}
+a:link{
+    text-decoration: none;
+}
+.checkout{
+    
+    
+}
+.items{
+    max-width: 1140px;
+    gap: 30px;
+    
+}
+.items>div{
+    width: 50%;
+}
+span{
+    color: #20D3C2;
+}
+.coupon{
+    border: 4px dotted #E3E3E3;
+    padding: 15px;
+}
+.coupon-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+  }
+ .coupon-form>input{
+    border: 0;
+    border-radius: 30px;
+  }
+  .coupon-form>input{
+    border: 0;
+    border-radius: 30px;
+  }
+  input:focus,button:focus{
+    outline: none ;
+    box-shadow: 0 0 5px #20D3C2;
+  }
+ .input-coupon{
+    padding-left: 15px;
+    width: 100%;
+    height: 46px;
+  }
+
+.input-btn 
+{
+ position: absolute;
+ margin-right: 5px;
+ width: 151px;
+ height: 38px;
+ background-color: #20D3C2;
+ color: white;
+}
+.btn-blace-order
+{
+ width: 482px;
+ height: 54px;
+ border: 0;
+ border-radius: 27px;
+ background-color: #20D3C2;
+ color: white;
+}
+.billing-details{
+    margin-top: 46px;
+     width: 100%;
+   }
+   .billing-form>div{
+       margin-bottom: 20px;
+   }
+   input{
+   padding: 0 7px 0 7px;
+   border-radius: 4px;
+   border: 1px solid #E3E3E3 !important;
+   }
+   .billing-form>div,#street{
+       margin-bottom: 20px;
+   }
+   
+   
+   h5,.different-address>div>label{
+       font-weight: bold;
+       font-size: 18px;
+   }
+   input[type="checkbox"]{
+   width: 15px;
+   height: 15px;
+   border-radius: 4px;
+   margin-right: 10px;
+   }
+   .name{
+       gap: 30px;
+   }
+
+   .w-100>label{
+       margin-bottom: 12px;
+   }
+   textarea {
+       height: 190px;
+     }
+
+.order{
+    border: 4px dotted #0E153D;
+ }
+ @media (min-width:812px) {
+     .order{
+         height: 1050px;
+     }
+ }
+ .order-content>div{
+     padding: 15px;
+ }
+ .order-content>hr{
+    margin:0 15px 0 15px;
+}
+ 
+ .title{
+     padding: 40px !important;
+     max-height: 80px !important;
+     background-color: #0E153D;
+ }
+ .title>span{
+     font-size: 24px;
+ }
+ .header>div{
+     color: #20D3C2;
+     font-weight: bold;
+ }
+ .subtotal>div{
+     color: #20D3C2;
+ }
+ input[type="radio"]{
+     margin-left: 7px;
+ }
+ .end{
+    color: #20D3C2;
+    border: none;
+    height: 2px !important;
+ }
+ .label-text{
+margin-left: 7px;
+ }
+ img{
+     margin: 0 7px 0 7px;
+ }
+ .info{
+     background-color: #0E153D;
+     color: white;
+     font-weight: 14px;
+     padding: 30px ;
+     margin: 15px;
+     border-radius: 4px;
+ }
+ .personal-data{
+    padding:0 15px 0 15px;
+    margin-left: 7px !important;
+ }
+ .other-payments>div{
+     margin-bottom: 20px;
+ }
+@media (max-width:768px) {
+    .items{
+        flex-direction: column;
+    }
+    .items>div{
+        width: 100%;
+    }
+    .customer-info{
+        align-items: center;
+    }
+    .input-btn {
+        width: 128px;
+        height: 28px;
+        font-size: 14px;
+    }
+    .input-coupon,p,.input-btn{
+        font-size: 14px;
+    }
+}
+
