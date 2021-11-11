@@ -96,6 +96,7 @@ using System.Threading;
 #line default
 #line hidden
 #nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/products")]
     public partial class Products : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

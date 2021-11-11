@@ -21,6 +21,7 @@ body {
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
+    max-width: 1140px !important
 }
 
 .items {
@@ -73,9 +74,9 @@ a:hover {
     position: relative;
 }
 
-    .slideshow-container:focus {
-        outline: none;
-    }
+.slideshow-container:focus {
+    outline: none;
+}
 
 /* Next & previous buttons */
 .prev-btn, .next-btn {
@@ -83,7 +84,6 @@ a:hover {
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 25px;
     color: #E3E3E3;
     background-color: #FFFFFF;
     border-width: 2px;
@@ -98,7 +98,7 @@ a:hover {
     right: 0;
 }
 
-.prev-btn:hover, next-btn-img:hover {
+.prev-btn:hover, next-btn:hover {
     fill: #20D3C2;
 }
 
@@ -106,6 +106,26 @@ a:hover {
     background-color: #20D3C2;
     color: #FFFFFF;
     transform: rotate(180dgr) translateX(180px);
+}
+
+#onhover {
+    display: none;
+}
+
+#prevbtn:hover div[id="initial"] {
+    display: none;
+}
+
+#prevbtn:hover div[id="onhover"] {
+    display: block;
+}
+
+#nextbtn:hover div[id="initial"] {
+    display: none;
+}
+
+#nextbtn:hover div[id="onhover"] {
+    display: block;
 }
 
 /* On smaller screens, decrease text size */

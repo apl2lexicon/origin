@@ -1,9 +1,12 @@
 ﻿@page "/shopcart"
 
-<Navbar />
+<div>
+    <Navbar />
+</div>
+
 <div class="shopping-cart">
     <div class="showcase">
-        <div class="items d-flex mx-auto justify-content-center container">
+        <div class="items d-flex mx-auto justify-content-center">
             <span class="shoppingcart-text">Shopping Cart</span>
             <span class="first-arrow-right">></span>
             <span class="checkout-text">Check Out</span>
@@ -12,157 +15,290 @@
         </div>
     </div>
 
-    <div class="shopping row container">
-        <div class="shopping-list col-8 col-s-12">
-            <table class="shopping-table">
-                <thead class="products-header">
-                    <tr>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Subtotal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <input type="image" img src="images/Close icon.png" class="img-fluid" alt="">
-                        </td>
-                        <td></td>
-                        <td>
-                            <input type="button" value="+" class="plusbutton">
-                            <input type="text" id="numOfItems" class="numOfItems" maxlength="3" size="3">
-                            <input type="button" value="-" class="minusbutton">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+    <div class="items mx-auto d-flex">
+        <div class="shopping row container">
+            <div class="shopping-list col-8 col-s-12">
+                @if (products == null)
+                {
+                    <em>Loading...</em>
+                }
+                else
+                {
+                    <table class="shopping-table">
+                        <thead class="products-header">
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                            </tr>
+                            <hr />
+                        </thead>
+                        <tbody>
+                            @for (int i = 0; i < products.Length; i++)
+                            {
+                                var local = i;
 
-            <div class="row mt-5">
-                <div class="col-8 col-s-12">
-                    <div class="coupon-code">
-                        <div class="have-code">
-                            <p>If you have a coupon code, please apply it below.</p>
+                                <tr>
+                                    <td>
+                                        <div class="align-baseline">
+                                            <input type="image" img src="images/Close icon.png" class="img-fluid" alt="">
+                                            @products[i].Name
+                                        </div>
+                                    </td>
+                                    <td>@products[i].Price</td>
+                                    <td>
+                                        <input type="button" value="+" class="plusbutton" @onclick="@(() => IncrementCount(local))">
+                                        <input type="text" id="numOfItems" class="numOfItems" maxlength="3" size="3" value=@currentCount>
+                                        <input type="button" value="-" class="minusbutton" @onclick="@(() => DecrementCount(local))">
+                                    </td>
+
+                                    <td>$@(Convert.ToDouble(products[i].Price) * currentCount)</td>
+                                </tr>
+                                <hr />
+                            }
+                        </tbody>
+                    </table>
+                }
+
+                <div class="row mt-5">
+                    <div class="col-8 col-s-12">
+                        <div class="coupon-code">
+                            <div class="have-code">
+                                <p>If you have a coupon code, please apply it below.</p>
+                            </div>
+                            <div class="coupon-input d-flex">
+                                <input type="text" class="coupon-text" placeholder="Coupon code">
+                                <a class="btn btn-default col-5 container" href="#">
+                                    <div class="apply-coupon-btn">
+                                        <p class="button-text">Apply Coupon</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="coupon-input d-flex">
-                            <input type="text" class="coupon-text" placeholder="Coupon code">
-                            <a class="btn btn-default col-5 container" href="#">
-                                <div class="apply-coupon-btn">
-                                    <p class="button-text">Apply Coupon</p>
+                    </div>
+
+                    <div class="col-4 col-s-12">
+                        <a class="btn btn-default me-2" href="#">
+                            <div class="update-cart-btn">
+                                <p class="update-cart-text">UPDATE CART</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shopping-total col-4 col-s-12">
+                <div class="shopping-total-header">
+                    <span class="shopping-total-header-text">CART TOTALS</span>
+                </div>
+
+                <div class="cart">
+                    <div class="subtotal d-flex align-items-end">
+                        <span class="subtotal-header">Subtotal</span>
+                        <span class="subtotal-value ms-2">@strCartSubTotal</span>
+                    </div>
+
+                    <hr class="subtotal-divider">
+
+                    <div class="shipping d-flex">
+                        <div class="shipping-header">
+                            <span class="shipping-header-text">Shipping</span>
+                        </div>
+                        <div class="shipping-data container">
+                            <div class="flatrate d-flex">
+                                <div class="flatrate-header">
+                                    <span class="flatrate-header-text">Flatrate: </span>
+                                </div>
+                                <div class="flatrate-value ms-2 me-2">
+                                    <span class="flatrate-value-text">$20.00</span>
+                                </div>
+                                <input type="radio" id="flatrate" value="@shipFlatrate" name="shipment" @onchange="FlatrateChanged">
+                            </div>
+
+                            <div class="freeshipping d-flex">
+                                <span class="freeshipping-text">Free shipping</span>
+                                <div class="me-2"></div>
+                                <input type="radio" id="freeshipping" value="@shipFree" name="shipment" @onchange="FreeChanged">
+                            </div>
+
+                            <div class="localpickup d-flex">
+                                <div class="localpickup-header">
+                                    <span class="localpickup-header-text">Local pickup: </span>
+                                </div>
+                                <div class="localpickup-value ms-2 me-2">
+                                    <span class="localpickup-value-text">$25.00</span>
+                                </div>
+                                <input type="radio" id="localpickup" value="@shipLocalPickup" name="shipment" @onchange="LocalPickupChanged">
+                            </div>
+
+                            <div>
+                                <a class="btn btn-default" href="#">
+                                    <div class="shipping-to-AL d-flex">
+                                        <div class="shipping-to-AL-1">
+                                            <span class="shipping-to-AL-1-text">Shipping to</span>
+                                        </div>
+                                        <div class="shipping-to-AL-2 ms-2">
+                                            <span class="shipping-to-AL-2-text">AL</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <a class="btn btn-default" href="#">
+                                <div class="change-address-btn">
+                                    <span class="change-address-text">Change address</span>
                                 </div>
                             </a>
                         </div>
                     </div>
+
+                    <hr class="subtotal-divider">
+
+                    <div class="total d-flex">
+                        <div class="total-header">
+                            <span>Total</span>
+                        </div>
+                        <div class="total-value ms-2">
+                            <span>@strTotalCost</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-4 col-s-12">
-                    <a class="btn btn-default me-2" href="#">
-                        <div class="update-cart-btn">
-                            <p class="update-cart-text">UPDATE CART</p>
+                <div>
+                    <a class="btn btn-default justify-content-center align-items-center d-flex" href="#">
+                        <div class="proceed-to-checkout-btn">
+                            <p>PROCEED TO CHECKOUT</p>
                         </div>
                     </a>
                 </div>
             </div>
         </div>
-
-        <div class="shopping-total col-4 col-s-12">
-            <div class="shopping-total-header">
-                <span class="shopping-total-header-text">CART TOTALS</span>
-            </div>
-
-            <div class="cart">
-                <div class="subtotal d-flex align-items-end">
-                    <span class="subtotal-header">Subtotal</span>
-                    <span class="subtotal-value ms-2">$910.00</span>
-                </div>
-
-                <hr class="subtotal-divider">
-
-                <div class="shipping d-flex">
-                    <div class="shipping-header">
-                        <span class="shipping-header-text">Shipping</span>
-                    </div>
-                    <div class="shipping-data container">
-                        <div class="flatrate d-flex">
-                            <div class="flatrate-header">
-                                <span class="flatrate-header-text">Flatrate: </span>
-                            </div>
-                            <div class="flatrate-value ms-2 me-2">
-                                <span class="flatrate-value-text">$20.00</span>
-                            </div>
-                            <input type="radio" id="flatrate" value="ship-flatrate" name="shipment">
-                        </div>
-
-                        <div class="freeshipping d-flex">
-                            <span class="freeshipping-text">Free shipping</span>
-                            <div class="me-2"></div>
-                            <input type="radio" id="freeshipping" value="ship-free" name="shipment">
-                        </div>
-
-                        <div class="localpickup d-flex">
-                            <div class="localpickup-header">
-                                <span class="localpickup-header-text">Local pickup: </span>
-                            </div>
-                            <div class="localpickup-value ms-2 me-2">
-                                <span class="localpickup-value-text">$25.00</span>
-                            </div>
-                            <input type="radio" id="localpickup" value="ship-localpickup" name="shipment">
-                        </div>
-
-                        <div>
-                            <a class="btn btn-default" href="#">
-                                <div class="shipping-to-AL d-flex">
-                                    <div class="shipping-to-AL-1">
-                                        <span class="shipping-to-AL-1-text">Shipping to</span>
-                                    </div>
-                                    <div class="shipping-to-AL-2 ms-2">
-                                        <span class="shipping-to-AL-2-text">AL</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <a class="btn btn-default" href="#">
-                            <div class="change-address-btn">
-                                <span class="change-address-text">Change address</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <hr class="subtotal-divider">
-
-                <div class="total d-flex">
-                    <div class="total-header">
-                        <span>Total</span>
-                    </div>
-                    <div class="total-value ms-2">
-                        <span>$910.00</span>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <a class="btn btn-default justify-content-center align-items-center d-flex" href="#">
-                    <div class="proceed-to-checkout-btn">
-                        <p>PROCEED TO CHECKOUT</p>
-                    </div>
-                </a>
-            </div>
-        </div>
     </div>
 </div>
-<div class="productslides">
-    <ProductSlides />
-</div>
-<div class="brands">
-    <Brands />
-</div>
-<div>
-    <Footer />
-</div>
+
+    <div class="productslides">
+        <ProductSlides />
+    </div>
+    <div class="brands">
+        <Brands />
+    </div>
+    <div>
+        <Footer />
+    </div>
 
 
-@code {
+    @code {
+        private int selectedRow;
+        private double subtotal = 0.00;
+        private double cartsubtotal = 0.00;
+        private string strCartSubTotal = "0.00";
+        private ProductModel[] products;
+        private int currentCount = 1;
 
-}
+        private double shippingCost = 0.00;
+        private string strShippingCost = "0.00";
+        private double totalCost = 0.00;
+        private string strTotalCost = "0.00";
+
+        private string shipFlatrate { get; set; }
+        private string shipFree { get; set; }
+        private string shipLocalPickup { get; set; }
+
+        //public class Item
+        //{
+        //    public static ProductModel[] ProductItem { get; set; }
+        //    public static int Quantity { get; set; }
+        //}
+
+
+        private void IncrementCount(int i)
+        {
+            currentCount++;
+
+            SubTotalSum(i);
+        }
+
+        private void DecrementCount(int i)
+        {
+            if (currentCount > 0)
+            {
+                currentCount--;
+            }
+
+            SubTotalSum(i);
+        }
+
+        //private async Task RowSelect(int rowIndex)
+        //{
+        //    await ListRowSelected.invokeAsync(rowIndex);
+        //}
+
+        private void SubTotalSum(int i)
+        {
+            double thePrice = Convert.ToDouble(products[i].Price);
+            subtotal = currentCount * thePrice;
+
+            CartSubTotalsum();
+        }
+
+        private void CartSubTotalsum()
+        {
+            cartsubtotal = 0.00;
+
+            for (int i = 0; i < products.Length; i++)
+            {
+                cartsubtotal = cartsubtotal + (Convert.ToDouble(products[i].Price) * currentCount);
+            }
+
+            strCartSubTotal = cartsubtotal.ToString("$ # ###.##");
+
+            if (strCartSubTotal.Trim().Equals(""))
+            {
+                strCartSubTotal = "$ 0.00";
+            }
+
+            TheTotalCost();
+        }
+
+        protected override async Task OnInitializedAsync()
+        {
+            products = await Http.GetFromJsonAsync<ProductModel[]>("http://localhost:7071/api/GetAllProducts");
+
+            CartSubTotalsum();
+        }
+
+        private void FlatrateChanged(ChangeEventArgs args)
+        {
+            shippingCost = 20.00;
+
+            TheTotalCost();
+        }
+
+        private void FreeChanged(ChangeEventArgs args)
+        {
+            shippingCost = 0.00;
+
+            TheTotalCost();
+        }
+
+        private void LocalPickupChanged(ChangeEventArgs args)
+        {
+            shippingCost = 25.00;
+
+            TheTotalCost();
+        }
+
+        private void TheTotalCost()
+        {
+            totalCost = cartsubtotal + shippingCost;
+
+            strTotalCost = string.Format(totalCost.ToString("$ # ###.##"));
+
+            if (strTotalCost.Trim().Equals(""))
+            {
+                strTotalCost = "$ 0.00";
+            }
+        }
+
+    }
