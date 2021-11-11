@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "kUyRB5mNqmLizm/YZWKOWk48q5RpJIF3+keg7ezn3VfHDn4cL2vzvYCLwNctyCF1Ne0AkFUmGThZ7FzTgJU4vQ==",
+=======
+  "dgSpecHash": "2PtgQH+AueKLclJQqH/S+68CDutXCQD7QaeoOrMrIjL96c1PAbhtXj43d+H6NNIDfBZryG/CNRdwhhJvD4DJbA==",
+>>>>>>> Tommy
   "success": true,
   "projectFilePath": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\Kenkata_Adm_Products\\Kenkata_Adm_Products.csproj",
   "expectedPackageFiles": [
@@ -155,7 +159,11 @@
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
+<<<<<<< HEAD
     "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.11\\microsoft.netcore.app.runtime.browser-wasm.5.0.11.nupkg.sha512"
+=======
+    "C:\\Users\\Tommy J Strömbäck\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.12\\microsoft.netcore.app.runtime.browser-wasm.5.0.12.nupkg.sha512"
+>>>>>>> Tommy
   ],
   "logs": []
 }
