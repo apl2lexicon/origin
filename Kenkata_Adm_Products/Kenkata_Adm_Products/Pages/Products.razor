@@ -1,5 +1,4 @@
 ﻿@page "/products"
-
 <div class="products">
     <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="d-flex">
@@ -68,6 +67,7 @@
 
                     @if (products == null)
                     {
+                        Console.WriteLine("its null");
                         <div class="filter-by-color placeholder-glow">
                             <p>Filter by Color</p>
                             @for (int i = 0; i < 5; i++)
@@ -79,6 +79,7 @@
                     }
                     else
                     {
+                        Console.WriteLine("loaded");
                         Dictionary<string, int> colorDic = new Dictionary<string, int>();
                         String[] colorsSv = { "SVART", "GRÅ", "RÖD", "GRÖN", "ORANGE", "BRUN" };
                         String[] colorsEn = { "Black", "Gray", "RED", "Green", "ORANGE", "Brown" };
@@ -102,7 +103,9 @@
                             <p>Filter by Color</p>
                             <div class="row filter-row">
                                 <div class="col col-1 color-square bg-all">
-                                    <input type="checkbox" checked name="color" onclick="check(this)">
+                                    <input type="checkbox" checked name="color" 
+                                           onclick="check(this)"
+                                           >
                                 </div>
                                 <div class="col col-10 color-name">All Colors</div>
                                 <div class="col col-1 number-of-items square">@total</div>
@@ -125,7 +128,7 @@
                     {
                         <div class="filter-by-size placeholder-glow">
                             <p>Filter by Size</p>
-                            @for (int i = 0; i < 5; i++)
+                            @for (int i = 0; i < 6; i++)
                             {
                                 <div class="row filter-row placeholder w-100"></div>
                             }
@@ -133,9 +136,9 @@
                     }
                     else
                     {
-                        int count = 0;
                         Dictionary<string, int> sizeDic = new Dictionary<string, int>();
-                        String[] sizes = { "XS", "S", "M", "L", "XL", "XXL" };
+                        String[] sizes = { "XXS","XS", "S", "M", "L", "XL", "XXL" };
+                        int count = 0; int total = 0;
                         foreach (String size in sizes)
                         {
                             foreach (var product in products)
@@ -143,20 +146,26 @@
                                 if (product.Size.Equals(size))
                                 {
                                     count++;
+                                    total++;
                                 }
                             }
                             sizeDic.Add(size, count);
                             count = 0;
                         }
                         <div class="filter-by-size ">
-                            <p>Filter by Size</p>
-                            @for (int i = 0; i < sizes.Length; i++)
+                            <p>Filter by Size</p> 
+                            <div class="row filter-row"
+                                 @onclick="() =>  SortSize(selectAll)">
+                                <div class="col col-11 name">@selectAll</div>
+                                <div class="col col-1 number-of-items square">@total</div>
+                            </div>
+                            @foreach (string size in sizes)
                             {
                                 <div class="row filter-row" 
-                                     @onclick="@(e => SizeSort(e, i))"
+                                     @onclick="() =>  SortSize(size)"
                                     >
-                                    <div class="col col-11 name">@sizes[i]</div>
-                                    <div class="col col-1 number-of-items square">@sizeDic[sizes[i]]</div>
+                                    <div class="col col-11 name">@size</div>
+                                    <div class="col col-1 number-of-items square">@sizeDic[size]</div>
                                 </div>
                             }
                         </div>
@@ -173,7 +182,7 @@
                             <div class="col col-6"><a href=""><img src="images/concord.png" alt=""></a></div>
                         </div>
                     </div>
-                    <div class="filter-by-brand ">
+                    <div>
                         <p>Product Status</p>
                         <div class="row filter-row">
                             <div class="col col-1 name">
@@ -193,7 +202,7 @@
         </div>
         <div class="product-items">
 
-            @if (products == null)
+            @if (productsFilter == null)
             {
                 for (int i = 0; i < 5; i++)
                 {
@@ -216,7 +225,7 @@
             else
             {
 
-                @foreach (var product in products)
+                @foreach (var product in productsFilter)
                 {
                     <div class="item">
                         <div class="item-image">
@@ -245,10 +254,18 @@
 @code {
     private string itemID;
     public ProductModel[] products;
+    public ProductModel[] productsFilter;
+    private bool filtred = false;
+    private string selectAll = "All";
+
 
     protected async Task GetProductsAsync()
     {
         products = await Http.GetFromJsonAsync<ProductModel[]>("http://localhost:7071/api/GetAllProducts");
+        if (!filtred)
+        {
+            productsFilter = (ProductModel[])products.Clone();
+        }
     }
 
     protected override void OnInitialized()
@@ -260,11 +277,24 @@
     {
         await GetProductsAsync();
     }
-
-    public void SizeSort (MouseEventArgs e, int i)
+    public void SortColor(string color)
     {
-          
+        productsFilter = (ProductModel[])products.Clone();
+        if (!color.Equals(selectAll))
+        {
+            productsFilter = productsFilter.Where((source, index) => source.Color.Equals(color)).ToArray();
+        }
 
+        filtred = true;
+    }
+    public void SortSize(string size)
+    {
+        productsFilter = (ProductModel[])products.Clone();
+        if (!size.Equals(selectAll))
+        {
+            productsFilter = productsFilter.Where((source, index) => source.Size.Equals(size)).ToArray();
+        }
+        filtred = true;
     }
     public void addTocart(String id)
     {
