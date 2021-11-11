@@ -1,41 +1,65 @@
 ﻿@page "/shopcart"
 
-    <div class="shopping-cart">
-        <div class="showcase">
-            <div class="items d-flex mx-auto justify-content-center container">
-                <span class="shoppingcart-text">Shopping Cart</span>
-                <span class="first-arrow-right">></span>
-                <span class="checkout-text">Check Out</span>
-                <span class="second-arrow-right">></span>
-                <span class="order-complete-text">Order Complete</span>
-            </div>
-        </div>
+<div>
+    <Navbar />
+</div>
 
+<div class="shopping-cart">
+    <div class="showcase">
+        <div class="items d-flex mx-auto justify-content-center">
+            <span class="shoppingcart-text">Shopping Cart</span>
+            <span class="first-arrow-right">></span>
+            <span class="checkout-text">Check Out</span>
+            <span class="second-arrow-right">></span>
+            <span class="order-complete-text">Order Complete</span>
+        </div>
+    </div>
+
+    <div class="items mx-auto d-flex">
         <div class="shopping row container">
             <div class="shopping-list col-8 col-s-12">
-                <table class="shopping-table">
-                    <thead class="products-header">
-                        <tr>
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Subtotal</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input type="image" img src="images/Close icon.png" class="img-fluid" alt="">
-                            </td>
-                            <td></td>
-                            <td>
-                                <input type="button" value="+" class="plusbutton">
-                                <input type="text" id="numOfItems" class="numOfItems" maxlength="3" size="3">
-                                <input type="button" value="-" class="minusbutton">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                @if (products == null)
+                {
+                    <em>Loading...</em>
+                }
+                else
+                {
+                    <table class="shopping-table">
+                        <thead class="products-header">
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                            </tr>
+                            <hr />
+                        </thead>
+                        <tbody>
+                            @for (int i = 0; i < products.Length; i++)
+                            {
+                                var local = i;
+
+                                <tr>
+                                    <td>
+                                        <div class="align-baseline">
+                                            <input type="image" img src="images/Close icon.png" class="img-fluid" alt="">
+                                            @products[i].Name
+                                        </div>
+                                    </td>
+                                    <td>@products[i].Price</td>
+                                    <td>
+                                        <input type="button" value="+" class="plusbutton" @onclick="@(() => IncrementCount(local))">
+                                        <input type="text" id="numOfItems" class="numOfItems" maxlength="3" size="3" value=@currentCount>
+                                        <input type="button" value="-" class="minusbutton" @onclick="@(() => DecrementCount(local))">
+                                    </td>
+
+                                    <td>$@(Convert.ToDouble(products[i].Price) * currentCount)</td>
+                                </tr>
+                                <hr />
+                            }
+                        </tbody>
+                    </table>
+                }
 
                 <div class="row mt-5">
                     <div class="col-8 col-s-12">
@@ -72,7 +96,7 @@
                 <div class="cart">
                     <div class="subtotal d-flex align-items-end">
                         <span class="subtotal-header">Subtotal</span>
-                        <span class="subtotal-value ms-2">$910.00</span>
+                        <span class="subtotal-value ms-2">@strCartSubTotal</span>
                     </div>
 
                     <hr class="subtotal-divider">
@@ -89,13 +113,13 @@
                                 <div class="flatrate-value ms-2 me-2">
                                     <span class="flatrate-value-text">$20.00</span>
                                 </div>
-                                <input type="radio" id="flatrate" value="ship-flatrate" name="shipment">
+                                <input type="radio" id="flatrate" value="@shipFlatrate" name="shipment" @onchange="FlatrateChanged">
                             </div>
 
                             <div class="freeshipping d-flex">
                                 <span class="freeshipping-text">Free shipping</span>
                                 <div class="me-2"></div>
-                                <input type="radio" id="freeshipping" value="ship-free" name="shipment">
+                                <input type="radio" id="freeshipping" value="@shipFree" name="shipment" @onchange="FreeChanged">
                             </div>
 
                             <div class="localpickup d-flex">
@@ -105,7 +129,7 @@
                                 <div class="localpickup-value ms-2 me-2">
                                     <span class="localpickup-value-text">$25.00</span>
                                 </div>
-                                <input type="radio" id="localpickup" value="ship-localpickup" name="shipment">
+                                <input type="radio" id="localpickup" value="@shipLocalPickup" name="shipment" @onchange="LocalPickupChanged">
                             </div>
 
                             <div>
@@ -136,7 +160,7 @@
                             <span>Total</span>
                         </div>
                         <div class="total-value ms-2">
-                            <span>$910.00</span>
+                            <span>@strTotalCost</span>
                         </div>
                     </div>
                 </div>
@@ -151,6 +175,8 @@
             </div>
         </div>
     </div>
+</div>
+
     <div class="productslides">
         <ProductSlides />
     </div>
@@ -163,5 +189,116 @@
 
 
     @code {
+        private int selectedRow;
+        private double subtotal = 0.00;
+        private double cartsubtotal = 0.00;
+        private string strCartSubTotal = "0.00";
+        private ProductModel[] products;
+        private int currentCount = 1;
+
+        private double shippingCost = 0.00;
+        private string strShippingCost = "0.00";
+        private double totalCost = 0.00;
+        private string strTotalCost = "0.00";
+
+        private string shipFlatrate { get; set; }
+        private string shipFree { get; set; }
+        private string shipLocalPickup { get; set; }
+
+        //public class Item
+        //{
+        //    public static ProductModel[] ProductItem { get; set; }
+        //    public static int Quantity { get; set; }
+        //}
+
+
+        private void IncrementCount(int i)
+        {
+            currentCount++;
+
+            SubTotalSum(i);
+        }
+
+        private void DecrementCount(int i)
+        {
+            if (currentCount > 0)
+            {
+                currentCount--;
+            }
+
+            SubTotalSum(i);
+        }
+
+        //private async Task RowSelect(int rowIndex)
+        //{
+        //    await ListRowSelected.invokeAsync(rowIndex);
+        //}
+
+        private void SubTotalSum(int i)
+        {
+            double thePrice = Convert.ToDouble(products[i].Price);
+            subtotal = currentCount * thePrice;
+
+            CartSubTotalsum();
+        }
+
+        private void CartSubTotalsum()
+        {
+            cartsubtotal = 0.00;
+
+            for (int i = 0; i < products.Length; i++)
+            {
+                cartsubtotal = cartsubtotal + (Convert.ToDouble(products[i].Price) * currentCount);
+            }
+
+            strCartSubTotal = cartsubtotal.ToString("$ # ###.##");
+
+            if (strCartSubTotal.Trim().Equals(""))
+            {
+                strCartSubTotal = "$ 0.00";
+            }
+
+            TheTotalCost();
+        }
+
+        protected override async Task OnInitializedAsync()
+        {
+            products = await Http.GetFromJsonAsync<ProductModel[]>("http://localhost:7071/api/GetAllProducts");
+
+            CartSubTotalsum();
+        }
+
+        private void FlatrateChanged(ChangeEventArgs args)
+        {
+            shippingCost = 20.00;
+
+            TheTotalCost();
+        }
+
+        private void FreeChanged(ChangeEventArgs args)
+        {
+            shippingCost = 0.00;
+
+            TheTotalCost();
+        }
+
+        private void LocalPickupChanged(ChangeEventArgs args)
+        {
+            shippingCost = 25.00;
+
+            TheTotalCost();
+        }
+
+        private void TheTotalCost()
+        {
+            totalCost = cartsubtotal + shippingCost;
+
+            strTotalCost = string.Format(totalCost.ToString("$ # ###.##"));
+
+            if (strTotalCost.Trim().Equals(""))
+            {
+                strTotalCost = "$ 0.00";
+            }
+        }
 
     }
