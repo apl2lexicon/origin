@@ -13,84 +13,84 @@ namespace Kenkata_Adm_Products.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 1 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 2 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 3 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 4 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 5 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 6 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 7 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 8 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 9 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Kenkata_Adm_Products;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 10 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Kenkata_Adm_Products.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 11 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using Kenkata_Adm_Products.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
+#line 12 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\_Imports.razor"
 using System.Threading;
 
 #line default
@@ -105,42 +105,121 @@ using System.Threading;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 178 "C:\DevOpsCode\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ShopCart.razor"
-       
-    private int currentCount = 1;
-    private double subtotal = 0.00;
-    public ProductModel[] products;
+#line 191 "C:\DevOps\Code\Kenkata_Adm_Products\Kenkata_Adm_Products\Pages\ShopCart.razor"
+           
+        private int selectedRow;
+        private double subtotal = 0.00;
+        private double cartsubtotal = 0.00;
+        private string strCartSubTotal = "0.00";
+        private ProductModel[] products;
+        private int currentCount = 1;
 
-    private void IncrementCount()
-    {
-        currentCount++;
+        private double shippingCost = 0.00;
+        private string strShippingCost = "0.00";
+        private double totalCost = 0.00;
+        private string strTotalCost = "0.00";
 
-        SubTotalSum();
-    }
+        private string shipFlatrate { get; set; }
+        private string shipFree { get; set; }
+        private string shipLocalPickup { get; set; }
 
-    private void DecrementCount()
-    {
-        if (currentCount > 0)
+        //public class Item
+        //{
+        //    public static ProductModel[] ProductItem { get; set; }
+        //    public static int Quantity { get; set; }
+        //}
+
+
+        private void IncrementCount(int i)
         {
-            currentCount--;
+            currentCount++;
 
-            SubTotalSum();
+            SubTotalSum(i);
         }
-    }
 
-    private double SubTotalSum()
-    {
-        int numOfITems = currentCount;
-        double thePrice = Convert.ToDouble(price);
-        subtotal = numOfITems * thePrice;
+        private void DecrementCount(int i)
+        {
+            if (currentCount > 0)
+            {
+                currentCount--;
+            }
 
-        return subtotal;
-    }
+            SubTotalSum(i);
+        }
 
-    protected override async Task OnInitializedAsync()
-    {
-        products = await Http.GetFromJsonAsync<ProductModel[]>("http://localhost:7071/api/GetAllProducts");
-    }
+        //private async Task RowSelect(int rowIndex)
+        //{
+        //    await ListRowSelected.invokeAsync(rowIndex);
+        //}
+
+        private void SubTotalSum(int i)
+        {
+            double thePrice = Convert.ToDouble(products[i].Price);
+            subtotal = currentCount * thePrice;
+
+            CartSubTotalsum();
+        }
+
+        private void CartSubTotalsum()
+        {
+            cartsubtotal = 0.00;
+
+            for (int i = 0; i < products.Length; i++)
+            {
+                cartsubtotal = cartsubtotal + (Convert.ToDouble(products[i].Price) * currentCount);
+            }
+
+            strCartSubTotal = cartsubtotal.ToString("$ # ###.##");
+
+            if (strCartSubTotal.Trim().Equals(""))
+            {
+                strCartSubTotal = "$ 0.00";
+            }
+
+            TheTotalCost();
+        }
+
+        protected override async Task OnInitializedAsync()
+        {
+            products = await Http.GetFromJsonAsync<ProductModel[]>("http://localhost:7071/api/GetAllProducts");
+
+            CartSubTotalsum();
+        }
+
+        private void FlatrateChanged(ChangeEventArgs args)
+        {
+            shippingCost = 20.00;
+
+            TheTotalCost();
+        }
+
+        private void FreeChanged(ChangeEventArgs args)
+        {
+            shippingCost = 0.00;
+
+            TheTotalCost();
+        }
+
+        private void LocalPickupChanged(ChangeEventArgs args)
+        {
+            shippingCost = 25.00;
+
+            TheTotalCost();
+        }
+
+        private void TheTotalCost()
+        {
+            totalCost = cartsubtotal + shippingCost;
+
+            strTotalCost = string.Format(totalCost.ToString("$ # ###.##"));
+
+            if (strTotalCost.Trim().Equals(""))
+            {
+                strTotalCost = "$ 0.00";
+            }
+        }
+
+    
 
 #line default
 #line hidden

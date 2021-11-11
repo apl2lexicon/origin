@@ -14,22 +14,37 @@
 
     <div class="slideshow-container col-12 col-s-6 mt-5">
         @*<div class="prev-btn" onclick="plusSlides(-1)">*@
-        <div class="prev-btn">
-             <img src="images/prev-btn.png" alt="">
+        <div id="prevbtn" class="prev-btn">
+            <div id="initial">
+                <img src="images/prev-btn.png" alt="">
+            </div>
+            <div id="onhover">
+                <img src="images/next-btn.png" alt="" style="transform: rotate(180deg)">
+            </div>
         </div>
 
         <div class="gallery container col-12 col-s-6 d-flex">
+            @if (products == null)
+            {
+                <em>Loading...</em>
+            }
+            else
+            {
+                @foreach (var product in products)
+                {
+                    string imageString = "images/" + product.Image;
 
-            @*           <div id="gallery-cell" class="gallery-cell col-3" onclick="replace('gallery-cell', 'selected-gallery-cell')">*@
-            <div id="gallery-cell" class="gallery-cell col-3">
-                <div class="new-label mt-2 ms-2">
-                    <p>New</p>
-                </div>
-                <img src="images/Hat.png" alt="">
-                <div class="subtitle">
-                    <span class="subtitle-text">Circle pattern girls shirt</span>
-                </div>
-            </div>
+                    <div id="gallery-cell" class="gallery-cell col-3">
+                        <div class="new-label mt-2 ms-2">
+                            <p>New</p>
+                        </div>
+                        <img src="images/Dress.png" alt="">
+                        <div class="subtitle">
+                            <span class="subtitle-text">@product.Name</span>
+                        </div>
+                    </div>
+                }
+            }
 
             @*            <div id="selected-gallery-cell" class="gallery-cell-selected col-3" onclick="replace('selected-gallery-cell','gallery-cell')">*@
             <div id="selected-gallery-cell" class="gallery-cell-selected col-3">
@@ -89,44 +104,16 @@
                     </div>
                 </div>
             </div>
-
-            @*            <div id="gallery-cell" class="gallery-cell col-3" onclick="replace('gallery-cell', 'selected-gallery-cell')">*@
-            <div id="gallery-cell" class="gallery-cell col-3">
-                <div class="new-label mt-2 ms-2">
-                    <p>New</p>
-                </div>
-                <img src="images/Dress.png" alt="">
-                <div class="subtitle">
-                    <span class="subtitle-text">Circle pattern girls shirt</span>
-                </div>
-            </div>
-
-            @*            <div id="gallery-cell" class="gallery-cell col-3" onclick="replace('gallery-cell', 'selected-gallery-cell')">*@
-            <div id="gallery-cell" class="gallery-cell col-3">
-                <div class="discount-label mt-2 ms-2">
-                    <p>-20%</p>
-                </div>
-                <img src="images/Dress-2.png" alt="">
-                <div class="subtitle">
-                    <span class="subtitle-text">Circle pattern girls shirt</span>
-                </div>
-            </div>
-
-            @*                <div id="gallery-cell" class="gallery-cell col-3" onclick="replace('gallery-cell', 'selected-gallery-cell')">*@
-            <div id="gallery-cell" class="gallery-cell col-3">
-                <div class="discount-label mt-2 ms-2">
-                    <p>-20%</p>
-                </div>
-                <img src="images/shirt.png" alt="">
-                <div class="subtitle">
-                    <span class="subtitle-text">Circle pattern girls shirt</span>
-                </div>
-            </div>
         </div>
 
         @*<div class="next-btn" onclick="plusSlides(1)">*@
-        <div class="next-btn">
-            <img src="images/next-btn.png" alt="">
+        <div id="nextbtn" class="next-btn">
+            <div id="initial">
+                <img src="images/prev-btn.png" alt="" style="transform: rotate(180deg)">
+            </div>
+            <div id="onhover">
+                <img src="images/next-btn.png" alt="">
+            </div>
         </div>
     </div>
 
@@ -139,6 +126,13 @@
 
 
 @code {
+    private ProductModel[] products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await Http.GetFromJsonAsync<ProductModel[]>("http://localhost:7071/Api/GetAllProducts");
+    }
+
     //private static void replace(object hide, object show)
     //{
     //    document.getElementById(hide).style.display = "none";

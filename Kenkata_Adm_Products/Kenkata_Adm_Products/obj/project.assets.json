@@ -9568,11 +9568,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DevOpsCode\\Kenkata_Adm_Products\\Kenkata_Adm_Products\\Kenkata_Adm_Products.csproj",
+      "projectUniqueName": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\Kenkata_Adm_Products\\Kenkata_Adm_Products.csproj",
       "projectName": "Kenkata_Adm_Products",
-      "projectPath": "C:\\DevOpsCode\\Kenkata_Adm_Products\\Kenkata_Adm_Products\\Kenkata_Adm_Products.csproj",
+      "projectPath": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\Kenkata_Adm_Products\\Kenkata_Adm_Products.csproj",
       "packagesPath": "C:\\Users\\mats-\\.nuget\\packages\\",
-      "outputPath": "C:\\DevOpsCode\\Kenkata_Adm_Products\\Kenkata_Adm_Products\\obj\\",
+      "outputPath": "C:\\DevOps\\Code\\Kenkata_Adm_Products\\Kenkata_Adm_Products\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
